@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="74" height="23" alt="Приложение «PINK»">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">
+              Фотографии
+            </a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a>
+              Конкурс
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              html academy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <p class="page-header__slogan">
+      Фотографии <br> пользователей
+    </p>
+  </header>
+  <main class="page-main">
+    <section class="photo-gallery">
+    <h2 class="visually-hidden">Фотогаллерея</h2>
+      <div class="photo-gallery__wrapper">
+        <header class="photo-gallery__header">
+          <p class="photo-gallery__desc">
+            Взгляните на фотографии, которые <br>выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
+        </header>
+        <ul class="photo-gallery__list">
+          <li class="photo-gallery__item photo-gallery__item--current">
+            <span class="photo-gallery__span photo-gallery__span--current">ПАНОРАМА ДНЯ</span>
+            <img class="photo-gallery__image photo-gallery__image--current" src="" alt="фотография дня">
+            <div class="photo-gallery__comment-wrap">
+              <b class="photo-gallery__author">Анна</b>
+              <span class="photo-gallery__date">(5 минут назад)</span>
+              <p class="photo-gallery__comment">
+                Прыгать или нет? Напишите в<br> комментарии свой совет и <br> смотрите прямую трансляцию в <br>
+                перископе, задавайте свои вопросы!
+              </p>
+              <span class="photo-gallery__likes">Нравится: 215</span>
+            </div>
+          </li>
+          <li class="photo-gallery__item">
+            <img class="photo-gallery__image" src="" alt="фото машина">
+            <div class="photo-gallery__comment-wrap">
+              <b class="photo-gallery__author">Левон</b>
+              <span class="photo-gallery__date">(5 часов назад)</span>
+              <p class="photo-gallery__comment">
+                Вчера он на луну летал, сегодня<br> в руки к нам попал.
+              </p>
+              <span class="photo-gallery__likes">Нравится: 356</span>
+            </div>
+          </li>
+          <li class="photo-gallery__item">
+            <img class="photo-gallery__image" src="" alt="фото барабаны">
+            <div class="photo-gallery__comment-wrap">
+              <b class="photo-gallery__author">Антон</b>
+              <span class="photo-gallery__date">(12 часов назад)</span>
+              <p class="photo-gallery__comment">
+                Соседи будут рады!
+              </p>
+              <span class="photo-gallery__likes">Нравится: 666</span>
+            </div>
+          </li>
+          <li class="photo-gallery__item">
+            <img class="photo-gallery__image" src="" alt="фото крыша">
+            <div class="photo-gallery__comment-wrap">
+              <b class="photo-gallery__author">Борис</b>
+              <span class="photo-gallery__date">(20 часов назад)</span>
+              <p class="photo-gallery__comment">
+                Здесь могла быть ваша цитата о <br>высоком и вечном.
+              </p>
+              <span class="photo-gallery__likes">Нравится: 215</span>
+            </div>
+          </li>
+          <li class="photo-gallery__item">
+            <img class="photo-gallery__image" src="" alt="фото бахча">
+            <div class="photo-gallery__comment-wrap">
+              <b class="photo-gallery__author">Сергей</b>
+              <span class="photo-gallery__date">(25 часов назад)</span>
+              <p class="photo-gallery__comment">
+                Самая кубанская в мире!
+              </p>
+              <span class="photo-gallery__likes">Нравится: 4</span>
+            </div>
+          </li>
+          <li class="photo-gallery__item">
+            <img class="photo-gallery__image" src="" alt="фото ноги">
+            <div class="photo-gallery__comment-wrap">
+              <b class="photo-gallery__author">Максим</b>
+              <span class="photo-gallery__date">(40 часов назад)</span>
+              <p class="photo-gallery__comment">
+                Где снег-то?
+              </p>
+              <span class="photo-gallery__likes">Нравится: 150</span>
+            </div>
+          </li>
+          <li class="photo-gallery__item">
+            <img class="photo-gallery__image" src="" alt="фото самолет">
+            <div class="photo-gallery__comment-wrap">
+              <b class="photo-gallery__author">Надежда</b>
+              <span class="photo-gallery__date">(45 часов назад)</span>
+              <p class="photo-gallery__comment">
+                Всем GM и взаимные лайки!
+              </p>
+              <span class="photo-gallery__likes">Нравится: 2560</span>
+            </div>
+          </li>
+          <li class="photo-gallery__item">
+            <p class="photo-gallery__desc">
+              Затмите их всех! <br>Выкладывайте все, что накопилось в <br>телефоне!</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="post-photo">
+      <h2 class="visually-hidden">Запостить фото</h2>
+      <form class="post-photo__form" name="post-photo__form" method="post" action="https://echo.htmlacademy.ru">
+        <div class="post-photo__wrapper">
+          <img class="post-photo__image" src="" alt="Ваше фото">
+          <button class="post-photo__toggle post-photo__toggle--current" type="button">Crop</button>
+          <button class="post-photo__toggle" type="button">Fill</button>
+          <button class="post-photo__toggle" type="button">Contrast</button>
+          <div class="post-photo__range-scale">
+            <div class="post-photo__range-bar">
+              <button class="post-photo__range-toggle" type="button">
+              </button>
+            </div>
+          </div>
+          <button class="post-photo__button post-photo__submit" type="submit">Запостить</button>
+          <button class="post-photo__button post-photo__cancel" type="button" disabled>Отмена</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo">
+        <img class="page-footer__logo-image" src="img/logo-mobile-full.svg" width="59" height="40"
+          alt="Приложение «PINK»">
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#">Twitter</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">Youtube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
