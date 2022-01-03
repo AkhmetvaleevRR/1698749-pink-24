@@ -1,8 +1,17 @@
+.review__item:not(:first-of-type) {
+  display: none;
+}
+
+.review__prev .review__next {
+  position: absolute;
+}
+
 .review__wrapper {
+  display: flex;
+  flex-direction: column;
   font-family: inherit;
   background: #ffffff;
   text-align: center;
-  display: flex;
 }
 
 .review__author {

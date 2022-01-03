@@ -2,6 +2,16 @@
   font-family: inherit;
 }
 
+.contest__header {
+  display: flex;
+  flex-direction: column;
+}
+
+.contest__form {
+  display: flex;
+  flex-direction: column;
+}
+
 .contest__slogan {
   font-family: inherit;
   font-style: normal;
@@ -14,6 +24,7 @@
 }
 
 .contest__desc {
+  text-align: center;
   font-family: inherit;
   font-style: normal;
   font-weight: normal;
@@ -42,8 +53,32 @@
   padding: 23px 20px;
 }
 
-.contest__buttons-wrap {
-  background: @gray;
+@media (min-width: @desktop-width) {
+  .contest__form {
+    display: grid;
+    grid-template-columns: min-content min-content;
+  }
+
+  .contest__text-input_wrap:first-of-type {
+    grid-column: 1/2;
+  }
+
+  .contest__buttons-wrap:first-of-type {
+    background: #ffffff;
+    grid-column: 2/3;
+  }
+
+  .contest__buttons-wrap {
+    background: #ffffff;
+  }
+
+  .contest__text-input_wrap {
+    grid-column: 1/-1;
+  }
+
+  .contest__text-input_wrap:last-of-type {
+    grid-column: 1/2;
+  }
 }
 
 .contest__caption {
