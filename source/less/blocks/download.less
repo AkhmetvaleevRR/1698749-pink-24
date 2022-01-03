@@ -1,6 +1,12 @@
 .download {
   font-family: inherit;
   color: #ffffff;
+  background: url("../img/bg/back-mobile.png") no-repeat @bg_dark-blue;
+  background-size: 100% 462px;
+
+  @media (min-width: @tablet-width) {
+    background: url("../img/bg/back-desktop.png") no-repeat center @bg_dark-blue;
+  }
 }
 
 .download__wrapper {
@@ -47,4 +53,19 @@
 
 .download__list {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.download__item {
+  margin: 0 10px 0 0;
+}
+
+.download__image {
+  margin: 58px 0 0 0;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

@@ -4,6 +4,19 @@
 
 .post-photo__wrapper {
   background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-photo__list {
+  list-style-type: none;
+}
+
+.post-photo__item .post-photo__range-scale {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
 }
 
 .post-photo__button {
