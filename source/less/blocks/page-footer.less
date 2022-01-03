@@ -1,0 +1,17 @@
+.page-footer__social-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+.page-footer__logo-image {
+  @media (min-width: @desktop-width) {
+    content: url("../img/icons/logo-desktop-footer.svg");
+  }
+}

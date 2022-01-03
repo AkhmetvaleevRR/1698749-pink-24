@@ -7,6 +7,10 @@
 }
 
 .site-list a {
+  position: relative;
+  display: block;
+  padding: 12px 21px;
+  padding-bottom: 13px;
   text-decoration: none;
   font-family: inherit;
   font-style: normal;
@@ -14,4 +18,12 @@
   font-size: 18px;
   line-height: 32px;
   color: #ffffff;
+  text-transform: uppercase;
+  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  background: @bg_dark-blue;
+
+  @media (min-width: @desktop-width) {
+    box-shadow: none;
+    background: transparent;
+  }
 }
