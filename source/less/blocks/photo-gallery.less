@@ -10,7 +10,7 @@
   line-height: 33px;
   text-align: center;
   color: #ffffff;
-  background: url("../source/img/back-mobile.png") @bg_dark-blue;
+  background: url("../img/back-mobile.png");
 }
 
 .photo-gallery__desc {
@@ -25,20 +25,42 @@
   background: #ffffff;
 }
 
-.photo-gallery__image {
-  width: 280px;
-
-  &--current {
-    width: 320px;
-  }
-}
 
 .photo-gallery__list {
   list-style: none;
   background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    column-gap: 20px;
+    row-gap: 54px;
+  }
+}
+
+.photo-gallery__image {
+  &--current {
+    width: 100%;
+  }
+}
+
+.photo-gallery__item {
+  display: flex;
+  flex-direction: column;
+
+  &--current {
+    @media (min-width: @tablet-width) {
+      grid-column: 1/-1;
+    }
+  }
 }
 
 .photo-gallery__span {
+  position: absolute;
+  margin: 0 0 0 150px;
   padding: 14px 20px;
   font-family: inherit;
   font-style: normal;
@@ -47,6 +69,10 @@
   line-height: 24px;
   color: #ffffff;
   background: @red;
+
+  @media (min-width: @tablet-width) {
+    margin: 30px 0 0 720px;
+  }
 }
 
 .photo-gallery__author {
@@ -61,7 +87,6 @@
 .photo-gallery__comment-wrap {
   padding: 25px;
   background: @gray;
-  width: 280px;
   margin: 0 0 20px 0;
 }
 
