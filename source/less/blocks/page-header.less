@@ -1,40 +1,48 @@
 .page-header {
-  // background: url("../img/back-mobile.png") no-repeat;
-  background: @bg_dark-blue;
-  color: #ffffff;
+  background: url("../img/bg/phone-hand.png") bottom no-repeat, url("../img/bg/back-mobile.png") no-repeat @bg_dark-blue;
+  background-size: 290px, 100%;
+  color: hsl(0, 0%, 100%);
   text-decoration: none;
-  height: 66px;
+  position: relative;
+  height: 462px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
 
-  &:hover {
-    background-color: @bg_dark-blue;
+  @media (min-width: @tablet-width) {
+    height: 730px;
+    background: url("../img/bg/phone-hand.png") bottom no-repeat, url("../img/bg/back-desktop.png") no-repeat @bg_dark-blue center;
+    background-size: 35%, 100%;
   }
 
   @media (min-width: @tablet-width) {
-    height: 110px;
-    justify-content: center;
+    height: 850px;
   }
 }
 
-.page-header__logo-image {
+.page-header__slogan {
+  margin: 90px 20px 40px 20px;
+  text-align: center;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: inherit;
+
   @media (min-width: @tablet-width) {
-    content: url("../img/icons/logo-tablet.svg");
-    margin: 20px;
-    height: 40px;
-    width: 140px;
+    position: absolute;
+    font-size: 40px;
+    line-height: 48px;
+    left: 90px;
+    width: 200px;
   }
 
   @media (min-width: @desktop-width) {
-    content: url("../img/icons/logo-desktop.svg");
-    height: 40px;
-    width: 140px;
-  }
-
-  @media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
-    width: 74px;
-    height: 23px;
-    margin: 22px 0 0 20px;
-    content: url("../img/icons/logo-mobile.svg");
+    font-size: 50px;
+    line-height: 69px;
+    left: 6%;
+    width: 250px;
   }
 }
