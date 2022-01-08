@@ -1,21 +1,91 @@
 .post-photo {
   font-family: inherit;
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    background-color: #ffffff;
+  }
 }
 
 .post-photo__wrapper {
-  background: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 24px;
+    align-items: center;
+    justify-items: center;
+
+    & .post-photo__image {
+      grid-column: 1/2;
+      grid-row: 1/4;
+    }
+
+    & .post-photo__button {
+      grid-column: 2/3;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-rows: 54px 1fr 1fr 54px;
+    grid-template-columns: 80px 1fr 1fr 1fr 80px;
+    row-gap: 24px;
+    column-gap: 44px;
+    align-items: center;
+    justify-items: center;
+    background-color: #f2f2f2;
+
+    & .post-photo__image {
+      grid-column: 2/3;
+      grid-row: 2/4;
+      height: 400px;
+      width: 300px;
+    }
+
+    & .post-photo__button:nth-child(3) {
+      grid-column: 3/4;
+      grid-row: 3/4;
+    }
+
+    & .post-photo__button:last-child {
+      grid-column: 4/5;
+      grid-row: 3/4;
+    }
+
+    & .post-photo__list {
+      grid-column: 3/5;
+      grid-row: 2/3;
+    }
+  }
 }
 
 .post-photo__list {
+  display: flex;
   list-style-type: none;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.post-photo__item {
+  margin: 20px 0 0 20px;
+  display: flex;
+  align-items: center;
 }
 
 .post-photo__item .post-photo__range-scale {
-  @media (max-width: @mobile-width-only) {
-    display: none;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
   }
 }
 
@@ -36,4 +106,41 @@
     color: @gray;
     border: 3px solid @gray;
   }
+}
+
+.post-photo__toggle {
+  margin: 0 20px 0 0;
+  width: 45px;
+  border: 0;
+  background-color: transparent;
+}
+
+.post-photo__range-scale {
+  position: relative;
+  height: 4px;
+  width: 240px;
+  background: #283645;
+  border-radius: 2px;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 288px;
+  }
+}
+
+.post-photo__range-toggle {
+  position: absolute;
+  padding: 0;
+  width: 14px;
+  height: 14px;
+  background: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 2px;
+  top: -9px;
+  box-sizing: content-box;
+  border: 2px solid #d22856;
 }
