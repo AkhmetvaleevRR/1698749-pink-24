@@ -9,17 +9,18 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="../img/icons/logo-mobile.svg" width="74" height="23" alt="Приложение «PINK»">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <img src ="../img/icons/open-menu.svg">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+    <nav class="main-nav main-nav--nojs main-nav--closed">
       <div class="main-nav__wrapper">
+        <div>
+        <a class="main-nav__logo">
+          <img class="main-nav__logo-image" src="../img/icons/logo-mobile.svg" width="74" height="23" alt="Приложение «PINK»">
+        </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--active">
             <a href="index.html">
               Главная
             </a>
@@ -29,7 +30,7 @@
               Фотографии
             </a>
           </li>
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item">
             <a href="form.html">
               Конкурс
             </a>
@@ -42,6 +43,9 @@
         </ul>
       </div>
     </nav>
+    <p class="page-header__slogan">
+      Фотографии <br>пользователей
+    </p>
   </header>
   <main class="page-main">
     <section class="photo-gallery">
@@ -134,11 +138,8 @@
               <span class="photo-gallery__likes">Нравится: 2560</span>
             </div>
           </li>
-          <li class="photo-gallery__item">
-            <p class="photo-gallery__desc">
-              Затмите их всех! <br>Выкладывайте все, что накопилось в <br>телефоне!</p>
-          </li>
         </ul>
+          <p class="photo-gallery__desc">Затмите их всех! <br>Выкладывайте все, что накопилось в <br class="photo-gallery__mobile-br">телефоне!</p>
       </div>
     </section>
     <section class="post-photo">
@@ -147,29 +148,31 @@
         <div class="post-photo__wrapper">
           <img class="post-photo__image" src="../img/gallery/gallery-7.png" width="280", height="375", alt="Ваше фото">
           <ul class="post-photo__list">
-            <li class="post-photo__item--current">
-              <button class="post-photo__toggle post-photo__toggle--current" type="button">Crop</button>
+            <li class="post-photo__item post-photo__item--current">
+              <button class="post-photo__toggle post-photo__toggle--current" type="button">
+                <svg width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 28h4V12a4 4 0 0 0-4-4H16v4h16v16Zm-20 4V0H8v8H0v4h8v20a4 4 0 0 0 4 4h20v8h4v-8h8v-4H12Z" fill="#D22856"/></svg>
+              </button>
               <div class="post-photo__range-scale">
-                <div class="post-photo__range-bar">
-                  <button class="post-photo__range-toggle" type="button">
-                  </button>
-                </div>
+                <button class="post-photo__range-toggle" type="button">
+                </button>
               </div>
             </li>
             <li class="post-photo__item">
-              <button class="post-photo__toggle" type="button">Fill</button>
+              <button class="post-photo__toggle" type="button">
+                <svg width="48" height="43" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" fill="#283645"><path d="M33.12 17.88 15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11a3 3 0 0 0 4.24 0l11-11a3 3 0 0 0 0-4.24ZM10.41 20 20 10.42 29.59 20H10.41ZM38 23s-4 4.33-4 7a4 4 0 1 0 8 0c0-2.67-4-7-4-7ZM48 40H0v3h48v-3Z"/></g></svg>
+              </button>
               <div class="post-photo__range-scale">
-                <div class="post-photo__range-bar">
-                <button class="post-photo__range-toggle" type="button"></button>
-                </div>
+                <button class="post-photo__range-toggle" type="button">
+                </button>
               </div>
             </li>
             <li class="post-photo__item">
-              <button class="post-photo__toggle" type="button">Contrast</button>
+              <button class="post-photo__toggle" type="button">
+                <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" fill="#283645"><path d="M16 4a12 12 0 1 1 0 24 12 12 0 0 1 0-24Zm0-4a16 16 0 1 0 0 32 16 16 0 0 0 0-32Z"/><path d="M16 24.29a8.52 8.52 0 0 0 0-17"/></g></svg>
+              </button>
               <div class="post-photo__range-scale">
-                <div class="post-photo__range-bar">
-                <button class="post-photo__range-toggle" type="button"></button>
-                </div>
+                <button class="post-photo__range-toggle" type="button">
+                </button>
               </div>
             </li>
           </ul>
@@ -181,24 +184,6 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <div class="page-footer__contacts contacts">
-        <b class="contacts__title">Остались вопросы?<br> Свяжитесь с нами!</b>
-        <span class="contacts__subtitle">Звоните:</span>
-        <p class="contacts__text">
-          <a class="contacts__phone" href="tel:+78125556666">
-            +7 (812) 555-66-66
-          </a>
-        </p>
-        <span class="contacts__subtitle">Пишите:</span>
-        <p class="contacts__text">
-          <a class="contacts__email" href="mail@htmlacademy.ru">
-            mail@htmlacademy.ru
-          </a>
-        </p>
-        <span class="contacts__subtitle">Приезжайте в гости:</span>
-        <p class="contacts__text">ул. Большая<br>Конюшенная, 19/8
-        </p>
-      </div>
       <div class="page-footer__map">
       </div>
       <div class="page-footer__social-wrapper">
