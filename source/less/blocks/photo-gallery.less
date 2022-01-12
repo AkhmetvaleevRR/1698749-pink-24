@@ -38,6 +38,7 @@
 
 
 .photo-gallery__list {
+  padding: 0;
   list-style: none;
   background-color: #ffffff;
   display: flex;
@@ -48,7 +49,6 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 300px 300px;
-    grid-template-rows: 455px;
     column-gap: 20px;
     row-gap: 54px;
     align-items: start;
@@ -58,7 +58,6 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 455px;
     column-gap: 20px;
     row-gap: 54px;
     align-items: start;
@@ -66,24 +65,68 @@
   }
 }
 
-.photo-gallery__image {
-  &--current {
+.photo-gallery__image-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .photo-gallery__comment-wrap {
+    align-self: center;
+
+    @media (min-width: @desktop-width) {
+      width: 940px;
+    }
+  }
+
+  .photo-gallery__comment {
+    @media (min-width: @tablet-width) {
+      grid-column: 1/-1;
+
+      & br {
+        display: none;
+      }
+    }
+  }
+
+  .photo-gallery__image {
     width: 100%;
+
+    @media (min-width: @desktop-width) {
+      height: 506px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      content: url("../img/gallery/panorama-desktop.png");
+    }
+  }
+}
+
+.photo-gallery__image {
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+
+  @media (min-width: @tablet-width) {
+    height: 300px;
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    height: 400px;
   }
 }
 
 .photo-gallery__item {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 180px 1fr;
 
-  &--current {
-    @media (min-width: @tablet-width) {
-      grid-column: 1/-1;
-    }
+  @media (min-width: @tablet-width) {
+    grid-template-rows: 300px 1fr;
   }
 
-  &--current br {
-    display: none;
+  @media (min-width: @desktop-width) {
+    grid-template-rows: 400px 1fr;
   }
 }
 
@@ -100,11 +143,7 @@
   background: @red;
 
   @media (min-width: @tablet-width) {
-    margin: 30px 0 0 40%;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 30px 0 0 720px;
+    margin: 30px 0 0 80%;
   }
 }
 
@@ -121,7 +160,6 @@
   padding: 25px;
   background: @gray;
   margin: 0 0 20px 0;
-  height: 155px;
 }
 
 .photo-gallery__date {

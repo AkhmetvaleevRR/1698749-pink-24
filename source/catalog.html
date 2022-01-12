@@ -3,7 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./img/icons/16.svg" type="image/svg+xml">
+  <link rel="icon" href="./img/icons/32.svg" type="image/svg+xml">
+  <link rel="icon" href="./img/icons/150.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>HTML Academy: Пинк</title>
 </head>
 
@@ -52,28 +57,31 @@
     <h2 class="visually-hidden">Фотогаллерея</h2>
       <div class="photo-gallery__wrapper">
         <header class="photo-gallery__header">
-          <p class="photo-gallery__slogan">
-            Фотографии <br> пользователей
-          </p>
           <p class="photo-gallery__desc">
             Взгляните на фотографии, которые <br>выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
         </header>
+        <div class="photo-gallery__image-wrapper">
+          <span class="photo-gallery__span">ПАНОРАМА ДНЯ</span>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="../img/gallery/panorama-desktop.png">
+            <img class="photo-gallery__image" src="../img/gallery/gallery-1.png" alt="фотография дня">
+          </picture>
+          <div class="photo-gallery__comment-wrap">
+            <b class="photo-gallery__author">Анна</b>
+            <span class="photo-gallery__date">(5 минут назад)</span>
+            <p class="photo-gallery__comment">
+              Прыгать или нет? Напишите в<br> комментарии свой совет и <br> смотрите прямую трансляцию в <br>
+              перископе, задавайте свои вопросы!
+            </p>
+            <span class="photo-gallery__likes">Нравится: 215</span>
+          </div>
+        </div>
         <ul class="photo-gallery__list">
-          <li class="photo-gallery__item photo-gallery__item--current">
-            <span class="photo-gallery__span photo-gallery__span--current">ПАНОРАМА ДНЯ</span>
-            <img class="photo-gallery__image photo-gallery__image--current" src="../img/gallery/gallery-1.png" alt="фотография дня">
-            <div class="photo-gallery__comment-wrap">
-              <b class="photo-gallery__author">Анна</b>
-              <span class="photo-gallery__date">(5 минут назад)</span>
-              <p class="photo-gallery__comment">
-                Прыгать или нет? Напишите в<br> комментарии свой совет и <br> смотрите прямую трансляцию в <br>
-                перископе, задавайте свои вопросы!
-              </p>
-              <span class="photo-gallery__likes">Нравится: 215</span>
-            </div>
-          </li>
           <li class="photo-gallery__item">
-            <img class="photo-gallery__image" src="../img/gallery/gallery-2.png" alt="фото машина">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="../img/gallery/gallery-2-desktop.png">
+              <img class="photo-gallery__image" src="../img/gallery/gallery-2.png" alt="фото машина">
+            </picture>
             <div class="photo-gallery__comment-wrap">
               <b class="photo-gallery__author">Левон</b>
               <span class="photo-gallery__date">(5 часов назад)</span>
@@ -84,7 +92,10 @@
             </div>
           </li>
           <li class="photo-gallery__item">
-            <img class="photo-gallery__image" src="../img/gallery/gallery-2.png" alt="фото барабаны">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="../img/gallery/gallery-3-desktop.png">
+              <img class="photo-gallery__image" src="../img/gallery/gallery-3.png" alt="фото барабаны">
+            </picture>
             <div class="photo-gallery__comment-wrap">
               <b class="photo-gallery__author">Антон</b>
               <span class="photo-gallery__date">(12 часов назад)</span>
@@ -95,7 +106,10 @@
             </div>
           </li>
           <li class="photo-gallery__item">
-            <img class="photo-gallery__image" src="../img/gallery/gallery-2.png" alt="фото крыша">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="../img/gallery/gallery-4-desktop.png">
+              <img class="photo-gallery__image" src="../img/gallery/gallery-4.png" alt="фото крыша">
+            </picture>
             <div class="photo-gallery__comment-wrap">
               <b class="photo-gallery__author">Борис</b>
               <span class="photo-gallery__date">(20 часов назад)</span>
@@ -106,7 +120,10 @@
             </div>
           </li>
           <li class="photo-gallery__item">
-            <img class="photo-gallery__image" src="../img/gallery/gallery-2.png" alt="фото бахча">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="../img/gallery/gallery-5-desktop.png">
+              <img class="photo-gallery__image" src="../img/gallery/gallery-5.png" alt="фото бахча">
+            </picture>
             <div class="photo-gallery__comment-wrap">
               <b class="photo-gallery__author">Сергей</b>
               <span class="photo-gallery__date">(25 часов назад)</span>
@@ -117,7 +134,10 @@
             </div>
           </li>
           <li class="photo-gallery__item">
-            <img class="photo-gallery__image" src="../img/gallery/gallery-2.png" alt="фото ноги">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="../img/gallery/gallery-6-desktop.png">
+              <img class="photo-gallery__image" src="../img/gallery/gallery-6.png" alt="фото ноги">
+            </picture>
             <div class="photo-gallery__comment-wrap">
               <b class="photo-gallery__author">Максим</b>
               <span class="photo-gallery__date">(40 часов назад)</span>
@@ -128,7 +148,10 @@
             </div>
           </li>
           <li class="photo-gallery__item">
-            <img class="photo-gallery__image" src="../img/gallery/gallery-2.png" alt="фото самолет">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="../img/gallery/gallery-7-desktop.png">
+              <img class="photo-gallery__image" src="../img/gallery/gallery-7.png" alt="фото самолет">
+            </picture>
             <div class="photo-gallery__comment-wrap">
               <b class="photo-gallery__author">Надежда</b>
               <span class="photo-gallery__date">(45 часов назад)</span>
@@ -146,7 +169,10 @@
       <h2 class="visually-hidden">Запостить фото</h2>
       <form class="post-photo__form" name="post-photo__form" method="post" action="https://echo.htmlacademy.ru">
         <div class="post-photo__wrapper">
-          <img class="post-photo__image" src="../img/gallery/gallery-7.png" width="280", height="375", alt="Ваше фото">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="../img/gallery/gallery-8-desktop.png">
+            <img class="post-photo__image" src="../img/gallery/gallery-8.png" width="280", height="375", alt="Ваше фото">
+          </picture>
           <ul class="post-photo__list">
             <li class="post-photo__item post-photo__item--current">
               <button class="post-photo__toggle post-photo__toggle--current" type="button">
@@ -220,6 +246,22 @@
     </div>
     </div>
   </footer>
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 </body>
 
 </html>
