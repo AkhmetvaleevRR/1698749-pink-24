@@ -3,11 +3,23 @@
 }
 
 .social__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 28px;
   height: 28px;
-  padding: 15px;
+  padding: 10px;
   border-radius: 50%;
   border: 3px solid fade(@dark, 10%);
+  margin: 0 0 0 14px;
+
+  &:hover {
+    border: 3px solid @dark;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .social__list {
