@@ -2,10 +2,10 @@
   font-family: inherit;
   display: flex;
   justify-content: center;
-  background-color: #f2f2f2;
+  background-color: @gray;
 
   @media (min-width: @tablet-width) {
-    background-color: #ffffff;
+    background-color: @white;
   }
 }
 
@@ -39,7 +39,7 @@
     column-gap: 44px;
     align-items: center;
     justify-items: center;
-    background-color: #f2f2f2;
+    background-color: @gray;
 
     & picture {
       grid-column: 2/3;
@@ -110,7 +110,7 @@
   border: 3px solid @red;
   box-sizing: border-box;
   border-radius: 30px;
-  background: #ffffff;
+  background: @white;
 
   &:disabled {
     color: @gray;
@@ -129,7 +129,7 @@
   position: relative;
   height: 4px;
   width: 240px;
-  background: #283645;
+  background: @dark;
   border-radius: 2px;
 
   @media (min-width: @tablet-width) {
@@ -146,11 +146,11 @@
   padding: 0;
   width: 14px;
   height: 14px;
-  background: #ffffff;
+  background: @white;
   border-radius: 50%;
   cursor: pointer;
   margin: 2px;
   top: -9px;
   box-sizing: content-box;
-  border: 2px solid #d22856;
+  border: 2px solid @red;
 }

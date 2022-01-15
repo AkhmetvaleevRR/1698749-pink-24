@@ -1,7 +1,7 @@
 .download {
   font-family: inherit;
-  color: #ffffff;
-  background: @bg_dark-blue;
+  color: @white;
+  background: @dark-blue;
 }
 
 .download__wrapper {
@@ -25,7 +25,7 @@
   outline: 0;
   margin: 28px 20px 40px 20px;
   padding: 17px 40px;
-  border: 3px solid #ffffff;
+  border: 3px solid @white;
   box-sizing: border-box;
   border-radius: 29px;
   font-family: inherit;
@@ -34,6 +34,16 @@
   font-size: 18px;
   line-height: 18px;
   color: inherit;
+
+  &:hover {
+    background: @white;
+    color: @red;
+  }
+
+  &:active {
+    background: @white;
+    color: fade(@red, 30%);
+  }
 }
 
 .download__intro {
