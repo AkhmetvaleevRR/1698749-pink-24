@@ -99,6 +99,14 @@
   padding: 23px 20px;
   border: 2px solid #e5e5e5;
   flex-grow: 2;
+
+  &:hover {
+    border: 2px solid @dark;
+  }
+
+  &:active {
+    border: 2px solid @red;
+  }
 }
 
 .contest__buttons-wrap {
@@ -227,6 +235,20 @@
   border-radius: 1px;
   color: @white;
   text-transform: uppercase;
+
+  &:hover {
+    background: @dark-green;
+  }
+
+  &:active {
+    background: @dark-green;
+    color: fade(@white, 30%);
+  }
+
+  &:disabled {
+    background: @gray;
+    border-color: @gray;
+  }
 }
 
 .contest__text {

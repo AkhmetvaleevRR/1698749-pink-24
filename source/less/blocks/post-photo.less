@@ -95,6 +95,11 @@
       display: block;
       position: absolute;
       margin-top: 80px;
+
+      @media (min-width: @tablet-width) {
+        margin: 0;
+        position: relative;
+      }
     }
   }
 }
@@ -105,6 +110,9 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
+}
+
+.post-photo__submit {
   color: @red;
   padding: 21px 90px;
   border: 3px solid @red;
@@ -112,9 +120,33 @@
   border-radius: 30px;
   background: @white;
 
-  &:disabled {
-    color: @gray;
-    border: 3px solid @gray;
+  &:hover {
+    color: @white;
+    background-color: @red;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+    background-color: @red;
+  }
+}
+
+.post-photo__cancel {
+  color: @dark;
+  padding: 21px 90px;
+  border: 3px solid @dark;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background: @white;
+  opacity: 0.1;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+    background-color: @dark;
   }
 }
 
@@ -123,6 +155,20 @@
   width: 45px;
   border: 0;
   background-color: transparent;
+}
+
+.post-photo__icon {
+  fill: @dark;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    fill: @red;
+    opacity: 1;
+  }
 }
 
 .post-photo__range-scale {
@@ -153,4 +199,8 @@
   top: -9px;
   box-sizing: content-box;
   border: 2px solid @red;
+
+  &:active {
+    background: @red;
+  }
 }
