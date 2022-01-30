@@ -1,16 +1,27 @@
 .site-list {
   list-style: none;
   z-index: 2;
+
+  @media (min-width: @desktop-width) {
+    align-self: center;
+    margin: 0 0 0 10%;
+    padding: 21px 0 21px;
+    column-gap: 30px;
+  }
 }
 
-.site-item {
-  padding: 21px 0;
+.site-list__item {
+  width: 100%;
+
+  @media (min-width: @desktop-width) {
+    padding: 21px 0;
+  }
 }
 
 .site-list a {
   position: relative;
   display: block;
-  padding: 12px 21px;
+  padding: 20px 21px;
   padding-bottom: 13px;
   text-decoration: none;
   font-family: inherit;
@@ -21,11 +32,17 @@
   color: @white;
   text-transform: uppercase;
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
-  background: @dark-blue;
+  background: @dark;
 
   @media (min-width: @desktop-width) {
-    box-shadow: none;
     background: transparent;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    box-shadow: none;
+    width: 100%;
+    text-transform: none;
   }
 
   &:hover {

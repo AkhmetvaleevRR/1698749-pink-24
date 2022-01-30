@@ -38,7 +38,7 @@ const html = () => {
 // Scripts
 
 const scripts = () => {
-    return gulp.src('source/js/script.js', { allowEmpty: true })
+    return gulp.src('source/js/script.js')
         .pipe(gulp.dest('build/js'))
         .pipe(browser.stream());
 }

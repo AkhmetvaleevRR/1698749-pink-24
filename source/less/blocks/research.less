@@ -7,11 +7,15 @@
   @media (min-width: @tablet-width) {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   @media (min-width: @desktop-width) {
     background: @gray;
+    justify-content: center;
+    column-gap: 70px;
+    padding: 0 0 65px 0;
+    margin: 0 45px 0 0;
   }
 }
 
@@ -19,6 +23,10 @@
   margin: 0 0 0 72px;
   flex-direction: column;
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 0 0;
+  }
 }
 
 .research__slogan {
@@ -28,6 +36,29 @@
   font-size: 30px;
   line-height: 36px;
   color: #000000;
+
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+    margin: 62px 0 30px 0;
+
+    & br {
+      display: none;
+    }
+  }
+}
+
+.research__image {
+  @media (min-width: @tablet-width) {
+    margin: 0 40px 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    align-self: center;
+    margin: 25px 0 0;
+    width: 300px;
+    height: 346px;
+  }
 }
 
 .research__intro {
@@ -37,6 +68,17 @@
   font-size: 14px;
   line-height: 24px;
   color: @dark;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0 0 30px 0;
+    width: 522px;
+
+    & br {
+      display: none;
+    }
+  }
 }
 
 .research__link {
@@ -46,4 +88,9 @@
   font-size: 14px;
   line-height: 24px;
   color: @red;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

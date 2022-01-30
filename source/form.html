@@ -101,7 +101,7 @@
                     </li>
                     <li class="site-list__item">
                         <a href="#">
-              html academy
+              HTML academy
             </a>
                     </li>
                 </ul>
@@ -120,10 +120,10 @@
                         Форма конкурса
                     </h2>
                     <p class="contest__desc">
-                        Поделитесь своей историей и получите <br>шанс выиграть ценный приз — 1000 <br>миль на вашу бонусную карту!</p>
+                        Поделитесь своей историей и получите <br>шанс выиграть ценный приз — 1000 <br>миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
                 </header>
                 <form class="contest__form" name="contest-form" method="post" action="https://echo.htmlacademy.ru">
-                    <fieldset class="contest__text-input_wrap">
+                    <fieldset class="contest__text-input_wrap contest__text-input_wrap--fio">
                         <label class="contest__label" for="secondname">ФАМИЛИЯ:
                 <input class="contest__input" id="secondname" type="text" placeholder="Укажите фамилию *">
               </label>
@@ -134,50 +134,50 @@
                 <input class="contest__input" id="lastname" type="text" placeholder="Ну и отчество тоже">
               </label>
                     </fieldset>
-                    <fieldset class="contest__buttons-wrap">
+                    <fieldset class="contest__buttons-wrap contest__buttons-wrap--checkbox">
                         <legend class="contest__caption">Ваши безбашенные <br> достижения в путешествии</legend>
-                        <label class="contest__checkbox-container">
-                            <input class="contest__checkbox-input visually-hidden" type="checkbox" name="shark" checked>
+                        <label class="contest__checkbox-container" for="shark">
+                            <input class="contest__checkbox-input visually-hidden" id="shark" type="checkbox" name="shark" checked>
                             <svg class="contest__checkbox-input-icon" width="31" height="22">
                               <use xlink:href="./img/sprite.svg#yes"></use>
                             </svg>
                             <span class="contest__checkbox-mark"></span>
                             <span class="contest__checkbox-label">Сделал селфи с акулой</span>
                         </label>
-                        <label class="contest__checkbox-container">
-                <input class="contest__checkbox-input visually-hidden" type="checkbox" name="sunburn" checked>
+                        <label class="contest__checkbox-container" for="sunburn">
+                <input class="contest__checkbox-input visually-hidden" id="sunburn" type="checkbox" name="sunburn" checked>
                 <svg class="contest__checkbox-input-icon" width="31" height="22">
                   <use xlink:href="./img/sprite.svg#yes"></use>
                 </svg>
                 <span class="contest__checkbox-mark"></span>
                 <span class="contest__checkbox-label">Обгорел на пляже</span>
               </label>
-                        <label class="contest__checkbox-container">
-                <input class="contest__checkbox-input visually-hidden" type="checkbox" name="superstar">
+                        <label class="contest__checkbox-container" for="superstar">
+                <input class="contest__checkbox-input visually-hidden" id="superstar" type="checkbox" name="superstar">
                 <svg class="contest__checkbox-input-icon" width="31" height="22">
                   <use xlink:href="./img/sprite.svg#yes"></use>
                 </svg>
                 <span class="contest__checkbox-mark"></span>
                 <span class="contest__checkbox-label">Видел Чака Норриса</span>
               </label>
-                        <label class="contest__checkbox-container">
-                <input class="contest__checkbox-input visually-hidden" type="checkbox" name="souvenir">
+                        <label class="contest__checkbox-container" for="souvenir">
+                <input class="contest__checkbox-input visually-hidden" id="souvenir" type="checkbox" name="souvenir">
                 <svg class="contest__checkbox-input-icon" width="31" height="22">
                   <use xlink:href="./img/sprite.svg#yes"></use>
                 </svg>
                 <span class="contest__checkbox-mark"></span>
                 <span class="contest__checkbox-label">Накупил сувениров</span>
               </label>
-                        <label class="contest__checkbox-container">
-                <input class="contest__checkbox-input visually-hidden" type="checkbox" name="tower">
+                        <label class="contest__checkbox-container" for="tower">
+                <input class="contest__checkbox-input visually-hidden" id="tower" type="checkbox" name="tower">
                 <svg class="contest__checkbox-input-icon" width="31" height="22">
                   <use xlink:href="./img/sprite.svg#yes"></use>
                 </svg>
                 <span class="contest__checkbox-mark"></span>
                 <span class="contest__checkbox-label">Удержал башню</span>
               </label>
-                        <label class="contest__checkbox-container">
-                <input class="contest__checkbox-input visually-hidden" type="checkbox" name="hotel">
+                        <label class="contest__checkbox-container" for="hotel">
+                <input class="contest__checkbox-input visually-hidden" id="hotel" type="checkbox" name="hotel">
                 <svg class="contest__checkbox-input-icon" width="31" height="22">
                   <use xlink:href="./img/sprite.svg#yes"></use>
                 </svg>
@@ -185,35 +185,41 @@
                 <span class="contest__checkbox-label">Разгромил отель</span>
               </label>
                     </fieldset>
-                    <fieldset class="contest__text-input_wrap">
+                    <fieldset class="contest__text-input_wrap contest__text-input_wrap--phone">
                         <legend class="contest__caption">Контактная информация</legend>
-                        <label class="contest__label" for="phone">НОМЕР ТЕЛЕФОНА
-                <input class="contest__input" id="phone" type="text" placeholder="Номер, пожалуйста">
-              </label>
-                        <label class="contest__label" for="address">АДРЕС ПОЧТЫ
-                <input class="contest__input" id="address" type="text" placeholder="Введите почту *">
-              </label>
+                        <label class="contest__label contest__label--phone" for="phone">НОМЕР ТЕЛЕФОНА
+                          <input class="contest__input" id="phone" type="text" placeholder="Номер, пожалуйста">
+                          <svg class="contest__text-input-icon contest__text-input-icon--phone">
+                            <use xlink:href="./img/sprite.svg#phone-icon"></use>
+                          </svg>
+                        </label>
+                        <label class="contest__label contest__label--mail" for="mail">АДРЕС ПОЧТЫ
+                          <input class="contest__input" id="mail" type="text" placeholder="Введите почту *">
+                            <svg class="contest__text-input-icon contest__text-input-icon--mail">
+                              <use xlink:href="./img/sprite.svg#mail-icon"></use>
+                            </svg>
+                        </label>
                     </fieldset>
-                    <fieldset class="contest__buttons-wrap">
+                    <fieldset class="contest__buttons-wrap contest__buttons-wrap--radio">
                         <legend class="contest__caption">С каким приложением <br> путешествовали?</legend>
-                        <label class="contest__radio-container">
-                            <input class="contest__radio-input visually-hidden" type="radio" name="OS" value="IOS" checked>
+                        <label class="contest__radio-container" for="ios">
+                            <input class="contest__radio-input visually-hidden" id="ios" type="radio" name="OS" value="IOS" checked>
                             <svg class="contest_radio-input-icon" width="15" height="15">
                               <use xlink:href="./img/sprite.svg#small-circle"></use>
                             </svg>
                             <span class="contest__radio-mark"></span>
                             <span class="contest__radio-label">Pink для iOS</span>
                         </label>
-                        <label class="contest__radio-container">
-                <input class="contest__radio-input visually-hidden" type="radio" name="OS" value="Android">
+                        <label class="contest__radio-container" for="android">
+                <input class="contest__radio-input visually-hidden" id="android" type="radio" name="OS" value="Android">
                 <svg class="contest_radio-input-icon" width="15" height="15">
                   <use xlink:href="./img/sprite.svg#small-circle"></use>
                 </svg>
                 <span class="contest__radio-mark"></span>
                 <span class="contest__radio-label">Pink на Android</span>
               </label>
-                        <label class="contest__radio-container">
-                <input class="contest__radio-input visually-hidden" type="radio" name="OS" value="Windows">
+                        <label class="contest__radio-container" for="windows">
+                <input class="contest__radio-input visually-hidden" id="windows" type="radio" name="OS" value="Windows">
                 <svg class="contest_radio-input-icon" width="15" height="15">
                   <use xlink:href="./img/sprite.svg#small-circle"></use>
                 </svg>
@@ -221,28 +227,32 @@
                 <span class="contest__radio-label">Windows Phone</span>
               </label>
                     </fieldset>
-                    <fieldset class="contest__text-input_wrap">
+                    <fieldset class="contest__text-input_wrap contest__text-input_wrap--comment">
                         <legend class="contest__caption">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
                         <textarea class="contest__textarea" id="emotions">Можно прям в красках, не стесняясь в выражениях</textarea>
                     </fieldset>
                     <button class="contest__button" type="submit">
               Отправить форму
             </button>
-                    <span class="contest__text"><b>*</b> — обязательные поля <p>для заполнения</p></span>
+                    <p class="contest__text"><b>*</b> — обязательные поля <span>для заполнения</span></p>
                 </form>
             </div>
         </section>
     </main>
     <footer class="page-footer">
         <div class="page-footer__wrapper">
-            <div class="page-footer__map">
-            </div>
             <div class="page-footer__social-wrapper">
-                <div class="page-footer__logo">
-                    <svg class="social__logo-image" width="145" height="40" alt="Приложение «PINK»">
-                      <use xlink:href=" ./img/sprite.svg#logo-tablet-footer"></use>
-                    </svg>
-                </div>
+              <div class="page-footer__logo">
+                <svg class="page-footer__logo-image page-footer__logo-image--visible-phone" width="145" height="40">
+                    <use xlink:href=" ./img/sprite.svg#logo-footer"></use>
+                  </svg>
+                  <svg class="page-footer__logo-image page-footer__logo-image--visible-tablet" width="145" height="40">
+                    <use xlink:href=" ./img/sprite.svg#logo-footer"></use>
+                  </svg>
+                  <svg class="page-footer__logo-image page-footer__logo-image--visible-desktop" width="145" height="40">
+                    <use xlink:href=" ./img/sprite.svg#logo-desktop-footer"></use>
+                  </svg>
+              </div>
                 <div class="page-footer__social social">
                     <ul class="social__list">
                         <li class="social__item">
@@ -281,6 +291,7 @@
                     </a>
                 </div>
             </div>
+        </div>
     </footer>
     <div class="modal-container modal-container-close">
         <div class="modal">
@@ -302,22 +313,7 @@
             </section>
         </div>
     </div>
-    <script>
-        var navMain = document.querySelector('.main-nav');
-        var navToggle = document.querySelector('.main-nav__toggle');
-
-        navMain.classList.remove('main-nav--nojs');
-
-        navToggle.addEventListener('click', function() {
-            if (navMain.classList.contains('main-nav--closed')) {
-                navMain.classList.remove('main-nav--closed');
-                navMain.classList.add('main-nav--opened');
-            } else {
-                navMain.classList.add('main-nav--closed');
-                navMain.classList.remove('main-nav--opened');
-            }
-        });
-    </script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

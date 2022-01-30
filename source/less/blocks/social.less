@@ -11,7 +11,7 @@
   padding: 10px;
   border-radius: 50%;
   border: 3px solid fade(@dark, 10%);
-  margin: 0 0 0 14px;
+  margin: 0 0 0 8px;
 
   &:hover {
     border: 3px solid @dark;
@@ -23,6 +23,17 @@
 }
 
 .social__list {
+  margin: 35px 0 35px 0;
+  padding: 0;
+  align-self: center;
   list-style: none;
   display: flex;
+
+
+  @media (min-width: @tablet-width) {
+    margin: 55px 45px 35px 25px;
+  }
+  @media (min-width: @desktop-width) {
+    margin: 50px 0 35px 0;
+  }
 }

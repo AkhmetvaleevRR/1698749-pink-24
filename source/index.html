@@ -137,7 +137,7 @@
                     </li>
                     <li class="site-list__item">
                         <a href="#">
-              html academy
+              HTML academy
             </a>
                     </li>
                 </ul>
@@ -161,19 +161,25 @@
         </button>
                 <ul class="download__list">
                     <li class="download__item">
+                      <a href="www.appstore.com">
                         <svg class="download__icon" width="47" height="56">
-                <use xlink:href="./img/sprite.svg#apple-logo"></use>
-              </svg>
+                           <use xlink:href="./img/sprite.svg#apple-logo"></use>
+                         </svg>
+                      </a>
                     </li>
                     <li class="download__item">
+                      <a href="www.playstore.com">
                         <svg class="download__icon" width="43" height="47">
-                <use xlink:href="./img/sprite.svg#android-logo"></use>
-              </svg>
+                          <use xlink:href="./img/sprite.svg#android-logo"></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="download__item">
+                      <a href="www.windows.com">
                         <svg class="download__icon" width="44" height="41">
-                <use xlink:href="./img/sprite.svg#microsoft-logo"></use>
-              </svg>
+                          <use xlink:href="./img/sprite.svg#microsoft-logo"></use>
+                        </svg>
+                      </a>
                     </li>
                 </ul>
                 <p class="download__intro">
@@ -194,19 +200,34 @@
                 </div>
                 <ul class="offer__list">
                     <li class="offer__item">
-                        <img class="offer__image" src="../img/bg/iphone-hello.png" width="158" height="279" alt="Приложение на телефоне">
-                        <span class="offer__title">Поднимает настроение</span>
-                        <p class="offer__text">Приложение позволит вам победить<br> осеннюю хандру и депрессию<br> буквально в несколько кликов!</p>
-                    </li>
+                        <picture>
+                          <source type="image/webp" srcset="../img/bg/iphone-shadow-3.webp 1x, ../img/bg/iphone-shadow-3.webp 2x">
+                          <img class="offer__image" src="../img/bg/iphone-shadow-3.png" width="158" height="279" alt="Приложение на телефоне">
+                        </picture>
+                        <div class="offer__text-wrapper">
+                          <span class="offer__title">Поднимает <br class="desktop-br">настроение</span>
+                          <p class="offer__text">Приложение позволит вам <br class="desktop-br"> победить<br class="mobile-br"> осеннюю хандру <br class="desktop-br"> и депрессию<br class="mobile-br"> буквально в <br class="desktop-br"> несколько кликов!</p>
+                        </div>
+                      </li>
                     <li class="offer__item">
-                        <img class="offer__image" src="../img/bg/iphone-hello.png" width="158" height="279" alt="Приложение на телефоне">
-                        <span class="offer__title">Меняет мир вокруг</span>
-                        <p class="offer__text">Сделайте снимок и украсьте его <br>смайликом или текстовой подписью, <br>чтобы усилить эффект</p>
-                    </li>
+                        <picture>
+                          <source type="image/webp" srcset="../img/bg/iphone-shadow-2.webp 1x, ../img/bg/iphone-shadow-2.webp 2x">
+                          <img class="offer__image" src="../img/bg/iphone-shadow-2.png" width="158" height="279" alt="Приложение на телефоне">
+                        </picture>
+                        <div class="offer__text-wrapper">
+                          <span class="offer__title">Меняет мир <br class="desktop-br">вокруг</span>
+                          <p class="offer__text">Сделайте снимок и <br class="desktop-br">украсьте его <br class="mobile-br">смайликом <br class="desktop-br">или текстовой подписью,<br class="desktop-br"> <br class="mobile-br">чтобы усилить эффект</p>
+                        </div>
+                      </li>
                     <li class="offer__item">
-                        <img class="offer__image" src="../img/bg/iphone-hello.png" width="158" height="279" alt="Приложение на телефоне">
-                        <span class="offer__title">Заводит новых друзей</span>
-                        <p class="offer__text">Ставьте лайки, комментируйте,<br> делитесь фотографиями с друзьями и <br>заводите новых</p>
+                        <picture>
+                          <source type="image/webp" srcset="../img/bg/iphone-shadow-1.webp 1x, ../img/bg/iphone-shadow-1.webp 2x">
+                          <img class="offer__image" src="../img/bg/iphone-shadow-1.png" width="158" height="279" alt="Приложение на телефоне">
+                        </picture>
+                        <div class="offer__text-wrapper">
+                          <span class="offer__title">Заводит  <br class="desktop-br">новых друзей</span>
+                          <p class="offer__text">Ставьте лайки,<br class="desktop-br"> комментируйте,<br class="mobile-br"> делитесь <br class="desktop-br">фотографиями с друзьями <br class="desktop-br">и <br class="mobile-br">заводите новых</p>
+                        </div>
                     </li>
                 </ul>
                 <img class="offer__image" src="../img/bg/iphone-hello.png" width="158" height="279" alt="Приложение на телефоне">
@@ -218,7 +239,7 @@
                 <h2 class="visually-hidden">
                     Исследования
                 </h2>
-                <p class="research__slogan">Эффект<br>на 24 часа!</p>
+                <p class="research__slogan">Эффект<br> на 24 часа!</p>
                 <p class="research__intro">
                     Британские ученые провели исследования<br> и доказали, что положительный эффект <br>от использования приложения длится<br> целые сутки!
                 </p>
@@ -266,13 +287,13 @@
                 </div>
                 <p class="review__toggles slider__toggles">
                     <button class="slider__toggle slider__toggle--current" type="button">
-                      <p class="visually-hidden">1</p>
+                      <span class="visually-hidden">1</span>
                     </button>
                     <button class="slider__toggle" type="button">
-                      <p class="visually-hidden">2</p>
+                      <span class="visually-hidden">2</span>
                     </button>
                     <button class="slider__toggle" type="button">
-                      <p class="visually-hidden">3</p>
+                      <span class="visually-hidden">3</span>
                     </button>
                 </p>
             </div>
@@ -301,17 +322,20 @@
                     <tr class="tariff__row">
                         <td class="tariff__cell">Розовый фильтр</td>
                         <td class="tariff__cell">
-                            <svg class="tariff__cell-icon-yes" width="31" height="21">
+                          <span class="tariff__cell-text">Розовый фильтр</span>
+                            <svg class="tariff__cell-icon tariff__cell-icon--yes" width="31" height="21">
                 <use xlink:href="./img/sprite.svg#yes"></use>
               </svg>
                         </td>
                         <td class="tariff__cell">
-                            <svg class="tariff__cell-icon-yes" width="31" height="21">
+                          <span class="tariff__cell-text">Розовый фильтр</span>
+                            <svg class="tariff__cell-icon tariff__cell-icon--yes" width="31" height="21">
                 <use xlink:href="./img/sprite.svg#yes"></use>
               </svg>
                         </td>
                         <td class="tariff__cell">
-                            <svg class="tariff__cell-icon-yes" width="31" height="21">
+                          <span class="tariff__cell-text">Розовый фильтр</span>
+                            <svg class="tariff__cell-icon tariff__cell-icon--yes" width="31" height="21">
                 <use xlink:href="./img/sprite.svg#yes"></use>
               </svg>
                         </td>
@@ -319,17 +343,20 @@
                     <tr class="tariff__row">
                         <td class="tariff__cell">Смайлики</td>
                         <td class="tariff__cell">
-                            <svg class="tariff__cell-icon" width="27" height="27">
+                          <span class="tariff__cell-text">Смайлики</span>
+                            <svg class="tariff__cell-icon tariff__cell-icon--no" width="27" height="27">
                 <use xlink:href="./img/sprite.svg#no"></use>
               </svg>
                         </td>
                         <td class="tariff__cell">
-                            <svg class="tariff__cell-icon-yes" width="31" height="21">
+                          <span class="tariff__cell-text">Смайлики</span>
+                            <svg class="tariff__cell-icon tariff__cell-icon--yes" width="31" height="21">
                 <use xlink:href="./img/sprite.svg#yes"></use>
               </svg>
                         </td>
                         <td class="tariff__cell">
-                            <svg class="tariff__cell-icon-yes" width="31" height="21">
+                          <span class="tariff__cell-text">Смайлики</span>
+                            <svg class="tariff__cell-icon tariff__cell-icon--yes" width="31" height="21">
                 <use xlink:href="./img/sprite.svg#yes"></use>
               </svg>
                         </td>
@@ -337,17 +364,20 @@
                     <tr class="tariff__row">
                         <td class="tariff__cell">Комментарии</td>
                         <td class="tariff__cell">
-                            <svg class="tariff__cell-icon" width="27" height="27">
+                          <span class="tariff__cell-text">Комментарии</span>
+                            <svg class="tariff__cell-icon tariff__cell-icon--no" width="27" height="27">
                 <use xlink:href="./img/sprite.svg#no"></use>
               </svg>
                         </td>
                         <td class="tariff__cell">
-                            <svg class="tariff__cell-icon" width="27" height="27">
+                          <span class="tariff__cell-text">Комментарии</span>
+                            <svg class="tariff__cell-icon tariff__cell-icon--no" width="27" height="27">
                 <use xlink:href="./img/sprite.svg#no"></use>
               </svg>
                         </td>
                         <td class="tariff__cell">
-                            <svg class="tariff__cell-icon-yes" width="31" height="21">
+                          <span class="tariff__cell-text">Комментарии</span>
+                            <svg class="tariff__cell-icon tariff__cell-icon--yes" width="31" height="21">
                 <use xlink:href="./img/sprite.svg#yes"></use>
               </svg>
                         </td>
@@ -365,31 +395,38 @@
         <div class="page-footer__wrapper">
             <div class="page-footer__contacts contacts">
                 <b class="contacts__title">Остались вопросы?<br> Свяжитесь с нами!</b>
-                <span class="contacts__subtitle">Звоните:</span>
-                <p class="contacts__text">
-                    <a class="contacts__phone" href="tel:+78125556666">
-            +7 (812) 555-66-66
-          </a>
-                </p>
-                <span class="contacts__subtitle">Пишите:</span>
-                <p class="contacts__text">
-                    <a class="contacts__email" href="mail@htmlacademy.ru">
-            mail@htmlacademy.ru
-          </a>
-                </p>
-                <span class="contacts__subtitle">Приезжайте в гости:</span>
-                <p class="contacts__text">ул. Большая<br>Конюшенная, 19/8
-                </p>
+                <div class="contacts__text-wrapper contacts__text-wrapper--phone">
+                  <span class="contacts__subtitle">Звоните:</span>
+                  <p class="contacts__text">
+                      <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+                  </p>
+                </div>
+                <div class="contacts__text-wrapper contacts__text-wrapper--mail">
+                  <span class="contacts__subtitle">Пишите:</span>
+                  <p class="contacts__text">
+                      <a class="contacts__email" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                  </p>
+                </div>
+                <div class="contacts__text-wrapper contacts__text-wrapper--addres">
+                  <span class="contacts__subtitle">Приезжайте в гости:</span>
+                  <p class="contacts__text">ул. Большая<br>Конюшенная, 19/8</p>
+                </div>
             </div>
             <div class="page-footer__map">
                 <iframe class="page-footer__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
                     allowfullscreen title="ул. Большая Конюшенная, 19/8">
-      </iframe>
+                 </iframe>
             </div>
             <div class="page-footer__social-wrapper">
                 <div class="page-footer__logo">
-                    <svg class="social__logo-image" width="145" height="40" alt="Приложение «PINK»">
-                        <use xlink:href=" ./img/sprite.svg#logo-tablet-footer"></use>
+                    <svg class="page-footer__logo-image page-footer__logo-image--visible-phone" width="145" height="40">
+                        <use xlink:href=" ./img/sprite.svg#logo-footer"></use>
+                      </svg>
+                      <svg class="page-footer__logo-image page-footer__logo-image--visible-tablet" width="145" height="40">
+                        <use xlink:href=" ./img/sprite.svg#logo-footer"></use>
+                      </svg>
+                      <svg class="page-footer__logo-image page-footer__logo-image--visible-desktop" width="145" height="40">
+                        <use xlink:href=" ./img/sprite.svg#logo-desktop-footer"></use>
                       </svg>
                 </div>
                 <div class="page-footer__social social">
@@ -432,22 +469,7 @@
             </div>
         </div>
     </footer>
-    <script>
-        var navMain = document.querySelector('.main-nav');
-        var navToggle = document.querySelector('.main-nav__toggle');
-
-        navMain.classList.remove('main-nav--nojs');
-
-        navToggle.addEventListener('click', function() {
-            if (navMain.classList.contains('main-nav--closed')) {
-                navMain.classList.remove('main-nav--closed');
-                navMain.classList.add('main-nav--opened');
-            } else {
-                navMain.classList.add('main-nav--closed');
-                navMain.classList.remove('main-nav--opened');
-            }
-        });
-    </script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -98,7 +98,7 @@
                     </li>
                     <li class="site-list__item">
                         <a href="#">
-              html academy
+              HTML academy
             </a>
                     </li>
                 </ul>
@@ -114,7 +114,7 @@
             <div class="photo-gallery__wrapper">
                 <header class="photo-gallery__header">
                     <p class="photo-gallery__desc">
-                        Взгляните на фотографии, которые <br>выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
+                        Взгляните на фотографии, которые <br>выкладывают пользователи! <br>Видите, как не хватает ваших?</p>
                 </header>
                 <div class="photo-gallery__image-wrapper">
                     <span class="photo-gallery__span">ПАНОРАМА ДНЯ</span>
@@ -126,21 +126,24 @@
                         <source media="(min-width: 1200px)" srcset="../img/gallery/panorama-desktop.png">
                         <img class="photo-gallery__image" src="../img/gallery/gallery-1.png" alt="фотография дня">
                     </picture>
-                    <div class="photo-gallery__comment-wrap">
+                    <div class="photo-gallery__comment-wrap photo-gallery__comment-wrap--current">
                         <b class="photo-gallery__author">Анна</b>
                         <span class="photo-gallery__date">(5 минут назад)</span>
                         <p class="photo-gallery__comment">
                             Прыгать или нет? Напишите в<br> комментарии свой совет и <br> смотрите прямую трансляцию в <br> перископе, задавайте свои вопросы!
                         </p>
-                        <span class="photo-gallery__likes">Нравится: 215</span>
+                        <span class="photo-gallery__likes">Нравится: 215
+                          <svg class="photo-gallery__icon" width="12" height="13">
+                            <use xlink:href="./img/sprite.svg#heart"></use>
+                          </svg>
+                        </span>
                     </div>
                 </div>
                 <ul class="photo-gallery__list">
                     <li class="photo-gallery__item">
                         <picture>
-                            <picture>
                                 <source type="image/webp" media="(min-width: 1200px)" srcset="../img/gallery/gallery-2-desktop.webp 1x, ./img/gallery/gallery-2-desktop.webp 2x">
-                                <source type="image/webp" media="(min-width: 768px)" srcset="../img/gallery//gallery-2-tablet.webp 1x, ./img/gallery/gallery-2-tablet.webp 2x">
+                                <source type="image/webp" media="(min-width: 768px)" srcset="../img/gallery/gallery-2.webp 1x, ./img/gallery/gallery-2.webp 2x">
                                 <source type="image/webp" srcset="../img/gallery/gallery-2.webp 1x, ./img/gallery/gallery-2.webp 2x">
                                 <source media="(min-width: 1200px)" srcset="../img/gallery/gallery-2-desktop.png">
                                 <img class="photo-gallery__image" src="../img/gallery/gallery-2.png" alt="фото машина">
@@ -151,13 +154,17 @@
                                 <p class="photo-gallery__comment">
                                     Вчера он на луну летал, сегодня<br> в руки к нам попал.
                                 </p>
-                                <span class="photo-gallery__likes">Нравится: 356</span>
+                                <span class="photo-gallery__likes">Нравится: 356
+                                  <svg class="photo-gallery__icon" width="12" height="13">
+                                    <use xlink:href="./img/sprite.svg#heart"></use>
+                                  </svg>
+                                </span>
                             </div>
                     </li>
                     <li class="photo-gallery__item">
                         <picture>
                             <source type="image/webp" media="(min-width: 1200px)" srcset="../img/gallery/gallery-3-desktop.webp 1x, ./img/gallery/gallery-3-desktop.webp 2x">
-                            <source type="image/webp" media="(min-width: 768px)" srcset="../img/gallery/gallery-3-tablet.webp 1x, ./img/gallery/gallery-3-tablet.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="../img/gallery/gallery-3.webp 1x, ./img/gallery/gallery-3.webp 2x">
                             <source type="image/webp" srcset="../img/gallery/gallery-3.webp 1x, ./img/gallery/gallery-3.webp 2x">
                             <source media="(min-width: 1200px)" srcset="../img/gallery/gallery-3-desktop.png">
                             <img class="photo-gallery__image" src="../img/gallery/gallery-3.png" alt="фото барабаны">
@@ -168,13 +175,17 @@
                             <p class="photo-gallery__comment">
                                 Соседи будут рады!
                             </p>
-                            <span class="photo-gallery__likes">Нравится: 666</span>
+                            <span class="photo-gallery__likes">Нравится: 666
+                              <svg class="photo-gallery__icon" width="12" height="13">
+                                <use xlink:href="./img/sprite.svg#heart"></use>
+                              </svg>
+                            </span>
                         </div>
                     </li>
                     <li class="photo-gallery__item">
                         <picture>
                             <source type="image/webp" media="(min-width: 1200px)" srcset="../img/gallery/gallery-4-desktop.webp 1x, ./img/gallery/gallery-4-desktop.webp 2x">
-                            <source type="image/webp" media="(min-width: 768px)" srcset="../img/gallery/gallery-4-tablet.webp 1x, ./img/gallery/gallery-4-tablet.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="../img/gallery/gallery-4.webp 1x, ./img/gallery/gallery-4.webp 2x">
                             <source type="image/webp" srcset="../img/gallery/gallery-4.webp 1x, ./img/gallery/gallery-4.webp 2x">
                             <source media="(min-width: 1200px)" srcset="../img/gallery/gallery-4-desktop.png">
                             <img class="photo-gallery__image" src="../img/gallery/gallery-4.png" alt="фото крыша">
@@ -185,13 +196,17 @@
                             <p class="photo-gallery__comment">
                                 Здесь могла быть ваша цитата о <br>высоком и вечном.
                             </p>
-                            <span class="photo-gallery__likes">Нравится: 215</span>
+                            <span class="photo-gallery__likes">Нравится: 215
+                              <svg class="photo-gallery__icon" width="12" height="13">
+                                <use xlink:href="./img/sprite.svg#heart"></use>
+                              </svg>
+                            </span>
                         </div>
                     </li>
                     <li class="photo-gallery__item">
                         <picture>
                             <source type="image/webp" media="(min-width: 1200px)" srcset="../img/gallery/gallery-5-desktop.webp 1x, ./img/gallery/gallery-5-desktop.webp 2x">
-                            <source type="image/webp" media="(min-width: 768px)" srcset="../img/gallery/gallery-5-tablet.webp.webp 1x, ./img/gallery/gallery-5-tablet.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="../img/gallery/gallery-5.webp 1x, ./img/gallery/gallery-5.webp 2x">
                             <source type="image/webp" srcset="../img/gallery/gallery-5.webp 1x, ./img/gallery/gallery-5.webp 2x">
                             <source media="(min-width: 1200px)" srcset="../img/gallery/gallery-5-desktop.png">
                             <img class="photo-gallery__image" src="../img/gallery/gallery-5.png" alt="фото бахча">
@@ -202,13 +217,17 @@
                             <p class="photo-gallery__comment">
                                 Самая кубанская в мире!
                             </p>
-                            <span class="photo-gallery__likes">Нравится: 4</span>
+                            <span class="photo-gallery__likes">Нравится: 4
+                              <svg class="photo-gallery__icon" width="12" height="13">
+                                <use xlink:href="./img/sprite.svg#heart"></use>
+                              </svg>
+                            </span>
                         </div>
                     </li>
                     <li class="photo-gallery__item">
                         <picture>
                             <source type="image/webp" media="(min-width: 1200px)" srcset="../img/gallery/gallery-6-desktop.webp 1x, ./img/gallery/gallery-6-desktop.webp 2x">
-                            <source type="image/webp" media="(min-width: 768px)" srcset="../img/gallery/gallery-6-tablet.webp 1x, ./img/gallery/gallery-6-tablet.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="../img/gallery/gallery-6.webp 1x, ./img/gallery/gallery-6.webp 2x">
                             <source type="image/webp" srcset="../img/gallery/gallery-6.webp 1x, ./img/gallery/gallery-6.webp 2x">
                             <source media="(min-width: 1200px)" srcset="../img/gallery/gallery-6-desktop.png">
                             <img class="photo-gallery__image" src="../img/gallery/gallery-6.png" alt="фото ноги">
@@ -219,13 +238,17 @@
                             <p class="photo-gallery__comment">
                                 Где снег-то?
                             </p>
-                            <span class="photo-gallery__likes">Нравится: 150</span>
+                            <span class="photo-gallery__likes">Нравится: 150
+                              <svg class="photo-gallery__icon" width="12" height="13">
+                                <use xlink:href="./img/sprite.svg#heart"></use>
+                              </svg>
+                            </span>
                         </div>
                     </li>
                     <li class="photo-gallery__item">
                         <picture>
                             <source type="image/webp" media="(min-width: 1200px)" srcset="../img/gallery/gallery-7-desktop.webp 1x, ./img/gallery/gallery-7-desktop.webp 2x">
-                            <source type="image/webp" media="(min-width: 768px)" srcset="../img/gallery/gallery-7-tablet.webp 1x, ./img/gallery/gallery-7-tablet.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="../img/gallery/gallery-7.webp 1x, ./img/gallery/gallery-7.webp 2x">
                             <source type="image/webp" srcset="../img/gallery/gallery-7.webp 1x, ./img/gallery/gallery-7.webp 2x">
                             <source media="(min-width: 1200px)" srcset="../img/gallery/gallery-7-desktop.png">
                             <img class="photo-gallery__image" src="../img/gallery/gallery-7.png" alt="фото самолет">
@@ -236,11 +259,15 @@
                             <p class="photo-gallery__comment">
                                 Всем GM и взаимные лайки!
                             </p>
-                            <span class="photo-gallery__likes">Нравится: 2560</span>
+                            <span class="photo-gallery__likes">Нравится: 2560
+                              <svg class="photo-gallery__icon" width="12" height="13">
+                                <use xlink:href="./img/sprite.svg#heart"></use>
+                              </svg>
+                            </span>
                         </div>
                     </li>
                 </ul>
-                <p class="photo-gallery__desc">Затмите их всех! <br>Выкладывайте все, что накопилось в <br class="photo-gallery__mobile-br">телефоне!</p>
+                <p class="photo-gallery__desc photo-gallery__desc--end">Затмите их всех! <br>Выкладывайте все, что накопилось в <br class="photo-gallery__mobile-br">телефоне!</p>
             </div>
         </section>
         <section class="post-photo">
@@ -249,15 +276,15 @@
                 <div class="post-photo__wrapper">
                     <picture>
                         <source type="image/webp" media="(min-width: 1200px)" srcset="../img/gallery/gallery-8-desktop.webp 1x, ./img/gallery/gallery-8-desktop.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="../img/gallery/gallery-8-tablet.webp 1x, ./img/gallery/gallery-8-tablet.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="../img/gallery/gallery-8.webp 1x, ./img/gallery/gallery-8.webp 2x">
                         <source type="image/webp" srcset="../img/gallery/gallery-8.webp 1x, ./img/gallery/gallery-8.webp 2x">
                         <source media="(min-width: 1200px)" srcset="../img/gallery/gallery-8-desktop.png">
-                        <img class="post-photo__image" src="../img/gallery/gallery-8.png" width="280" , height="375" , alt="Ваше фото">
+                        <img class="post-photo__image" src="../img/gallery/gallery-8.png" width="280"  height="375"  alt="Ваше фото">
                     </picture>
                     <ul class="post-photo__list">
                         <li class="post-photo__item post-photo__item--current">
                             <button class="post-photo__toggle post-photo__toggle--current" type="button">
-                <svg class="post-photo__icon" width="44" height="44">
+                <svg class="post-photo__icon">
                   <path d="M32 28h4V12a4 4 0 0 0-4-4H16v4h16v16Zm-20 4V0H8v8H0v4h8v20a4 4 0 0 0 4 4h20v8h4v-8h8v-4H12Z"/>
                 </svg>
               </button>
@@ -268,7 +295,7 @@
                         </li>
                         <li class="post-photo__item">
                             <button class="post-photo__toggle" type="button">
-                <svg  class="post-photo__icon" width="48" height="43">
+                <svg  class="post-photo__icon">
                   <g>
                     <path d="M33.12 17.88 15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11a3 3 0 0 0 4.24 0l11-11a3 3 0 0 0 0-4.24ZM10.41 20 20 10.42 29.59 20H10.41ZM38 23s-4 4.33-4 7a4 4 0 1 0 8 0c0-2.67-4-7-4-7ZM48 40H0v3h48v-3Z"/>
                   </g>
@@ -281,7 +308,7 @@
                         </li>
                         <li class="post-photo__item">
                             <button class="post-photo__toggle" type="button">
-                <svg class="post-photo__icon" width="32" height="32">
+                <svg class="post-photo__icon">
                   <g >
                     <path d="M16 4a12 12 0 1 1 0 24 12 12 0 0 1 0-24Zm0-4a16 16 0 1 0 0 32 16 16 0 0 0 0-32Z"/>
                     <path d="M16 24.29a8.52 8.52 0 0 0 0-17"/>
@@ -305,11 +332,17 @@
             <div class="page-footer__map">
             </div>
             <div class="page-footer__social-wrapper">
-                <div class="page-footer__logo">
-                    <svg class="social__logo-image" width="145" height="40" alt="Приложение «PINK»">
-                        <use xlink:href=" ./img/sprite.svg#logo-tablet-footer"></use>
-                      </svg>
-                </div>
+              <div class="page-footer__logo">
+                <svg class="page-footer__logo-image page-footer__logo-image--visible-phone" width="145" height="40">
+                    <use xlink:href=" ./img/sprite.svg#logo-footer"></use>
+                  </svg>
+                  <svg class="page-footer__logo-image page-footer__logo-image--visible-tablet" width="145" height="40">
+                    <use xlink:href=" ./img/sprite.svg#logo-footer"></use>
+                  </svg>
+                  <svg class="page-footer__logo-image page-footer__logo-image--visible-desktop" width="145" height="40">
+                    <use xlink:href=" ./img/sprite.svg#logo-desktop-footer"></use>
+                  </svg>
+              </div>
                 <div class="page-footer__social social">
                     <ul class="social__list">
                         <li class="social__item">
@@ -348,23 +381,9 @@
                     </a>
                 </div>
             </div>
+          </div>
     </footer>
-    <script>
-        var navMain = document.querySelector('.main-nav');
-        var navToggle = document.querySelector('.main-nav__toggle');
-
-        navMain.classList.remove('main-nav--nojs');
-
-        navToggle.addEventListener('click', function() {
-            if (navMain.classList.contains('main-nav--closed')) {
-                navMain.classList.remove('main-nav--closed');
-                navMain.classList.add('main-nav--opened');
-            } else {
-                navMain.classList.add('main-nav--closed');
-                navMain.classList.remove('main-nav--opened');
-            }
-        });
-    </script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
