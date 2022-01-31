@@ -185,6 +185,7 @@
 }
 
 .photo-gallery__comment-wrap {
+  position: relative;
   padding: 15px 0 25px 0;
   background: @gray;
   margin: 0 0 17px 0;
@@ -203,7 +204,8 @@
 
     & .photo-gallery__icon {
       position: absolute;
-      left: -35%;
+      left: 17px;
+      bottom: 30px;
     }
 
     @media (min-width: @tablet-width) {
@@ -219,8 +221,9 @@
       }
 
       & .photo-gallery__icon {
+        left: unset;
         top: 5px;
-        left: 110%;
+        right: -20px;
       }
 
       .photo-gallery__author {
@@ -272,8 +275,14 @@
 
 .photo-gallery__icon {
   position: absolute;
-  right: -165%;
-  bottom: 30%;
+  left: 17px;
+  bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    left: unset;
+    right: 30px;
+    bottom: 25px;
+  }
 }
 
 .photo-gallery__comment {
@@ -290,7 +299,6 @@
 }
 
 .photo-gallery__likes {
-  position: relative;
   text-transform: uppercase;
   font-family: inherit;
   font-style: normal;

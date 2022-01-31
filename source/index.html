@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./img/icons/16.svg" type="image/svg+xml">
     <link rel="icon" href="./img/icons/32.svg" type="image/svg+xml">
-    <link rel="icon" href="./img/icons/150.svg" type="image/svg+xml">
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" href="./img/icons/152.svg" type="image/svg+xml">
+    <link rel="manifest" href="../manifest.webmanifest">
     <title>HTML Academy: Пинк</title>
 </head>
 
@@ -19,6 +19,7 @@
             <div class="main-nav__wrapper">
                 <div class="main-nav__logo-wrapper">
                     <a class="main-nav__logo">
+                      <p class="visually-hidden">Логотип приложения ПИНК</p>
                         <svg class="main-nav__logo-image main-nav__logo-image--visible-phone" width="74" height="23" viewBox="0 0 74 23" xmlns="http://www.w3.org/2000/svg">
             <path d="M0.00496827 1.54857C0.00487772 1.21254 0.135804 0.889818 0.369742 0.649431C0.60368 0.409043 0.922049 0.27008 1.25676 0.262266H8.39001C13.4469 0.262266 16.7751 2.9645 16.7751 7.39179V7.45162C16.7751 12.2977 12.7415 14.8105 7.97274
         14.8105H2.53836V21.611C2.55394 21.7874 2.53277 21.9651 2.47619 22.1329C2.41961 22.3006 2.32887 22.4547 2.20973 22.5854C2.09058 22.716 1.94565 22.8204 1.78416 22.8918C1.62266 22.9631 1.44812 23 1.27166 23C1.0952 23 0.920671 22.9631 0.759173 22.8918C0.597674
@@ -121,64 +122,65 @@
                 </div>
                 <ul class="main-nav__list site-list">
                     <li class="site-list__item site-list__item--active">
-                        <a>
-              Главная
-            </a>
+                      <a>
+                        Главная
+                      </a>
                     </li>
                     <li class="site-list__item">
-                        <a href="catalog.html">
-              Фотографии
-            </a>
+                      <a href="catalog.html">
+                        Фотографии
+                      </a>
                     </li>
                     <li class="site-list__item">
-                        <a href="form.html">
-              Конкурс
-            </a>
+                      <a href="form.html">
+                        Конкурс
+                      </a>
                     </li>
                     <li class="site-list__item">
-                        <a href="#">
-              HTML academy
-            </a>
+                      <a href="#">
+                        HTML academy
+                      </a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <p class="page-header__slogan page-header__slogan--index">
-            Взгляните на жизнь <br> иначе!
-        </p>
     </header>
     <main class="page-main">
-        <h1 class="visually-hidden">Приложение PINK</h1>
-        <section class="download">
-            <header class="download__header">
-                <h2 class="visually-hidden">
-                    Ссылки для скачивания
-                </h2>
-            </header>
-            <div class="download__wrapper">
-                <button class="download__button" type="button">
-          Скачать приложение
-        </button>
-                <ul class="download__list">
-                    <li class="download__item">
-                      <a href="www.appstore.com">
-                        <svg class="download__icon" width="47" height="56">
-                           <use xlink:href="./img/sprite.svg#apple-logo"></use>
-                         </svg>
-                      </a>
-                    </li>
-                    <li class="download__item">
-                      <a href="www.playstore.com">
-                        <svg class="download__icon" width="43" height="47">
-                          <use xlink:href="./img/sprite.svg#android-logo"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="download__item">
-                      <a href="www.windows.com">
-                        <svg class="download__icon" width="44" height="41">
-                          <use xlink:href="./img/sprite.svg#microsoft-logo"></use>
-                        </svg>
+      <h1 class="visually-hidden">Приложение PINK</h1>
+      <section class="download">
+        <header class="download__header">
+          <h2 class="visually-hidden">Ссылки для скачивания</h2>
+        </header>
+          <div class="download__wrapper">
+            <p class="download__slogan">
+              Взгляните на жизнь <br> иначе!
+            </p>
+            <button class="download__button" type="button">
+              Скачать приложение
+            </button>
+              <ul class="download__list">
+                <li class="download__item">
+                  <a href="www.appstore.com">
+                    <p class="visually-hidden">Ссылка на магазин apple</p>
+                    <svg class="download__icon" width="47" height="56">
+                      <use xlink:href="./img/sprite.svg#apple-logo"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="download__item">
+                  <a href="www.playstore.com">
+                    <p class="visually-hidden">Ссылка на магазин android</p>
+                    <svg class="download__icon" width="43" height="47">
+                      <use xlink:href="./img/sprite.svg#android-logo"></use>
+                    </svg>
+                  </a>
+                </li>
+                  <li class="download__item">
+                    <a href="www.windows.com">
+                      <p class="visually-hidden">Ссылка на магазин Windows</p>
+                      <svg class="download__icon" width="44" height="41">
+                        <use xlink:href="./img/sprite.svg#microsoft-logo"></use>
+                      </svg>
                       </a>
                     </li>
                 </ul>
@@ -201,7 +203,8 @@
                 <ul class="offer__list">
                     <li class="offer__item">
                         <picture>
-                          <source type="image/webp" srcset="../img/bg/iphone-shadow-3.webp 1x, ../img/bg/iphone-shadow-3.webp 2x">
+                          <source type="image/png" srcset="../img/bg/iphone-shadow-3.png 1x, ../img/bg/iphone-shadow-3-2x.png 2x">
+                          <source type="image/webp" srcset="../img/bg/iphone-shadow-3.webp 1x, ../img/bg/iphone-shadow-3-2x.webp 2x">
                           <img class="offer__image" src="../img/bg/iphone-shadow-3.png" width="158" height="279" alt="Приложение на телефоне">
                         </picture>
                         <div class="offer__text-wrapper">
@@ -211,7 +214,8 @@
                       </li>
                     <li class="offer__item">
                         <picture>
-                          <source type="image/webp" srcset="../img/bg/iphone-shadow-2.webp 1x, ../img/bg/iphone-shadow-2.webp 2x">
+                          <source type="image/png" srcset="../img/bg/iphone-shadow-2.png 1x, ../img/bg/iphone-shadow-2-2x.png 2x">
+                          <source type="image/webp" srcset="../img/bg/iphone-shadow-2.webp 1x, ../img/bg/iphone-shadow-2-2x.webp 2x">
                           <img class="offer__image" src="../img/bg/iphone-shadow-2.png" width="158" height="279" alt="Приложение на телефоне">
                         </picture>
                         <div class="offer__text-wrapper">
@@ -221,7 +225,8 @@
                       </li>
                     <li class="offer__item">
                         <picture>
-                          <source type="image/webp" srcset="../img/bg/iphone-shadow-1.webp 1x, ../img/bg/iphone-shadow-1.webp 2x">
+                          <source type="image/png" srcset="../img/bg/iphone-shadow-1.png 1x, ../img/bg/iphone-shadow-1-2x.png 2x">
+                          <source type="image/webp" srcset="../img/bg/iphone-shadow-1.webp 1x, ../img/bg/iphone-shadow-1-2x.webp 2x">
                           <img class="offer__image" src="../img/bg/iphone-shadow-1.png" width="158" height="279" alt="Приложение на телефоне">
                         </picture>
                         <div class="offer__text-wrapper">
@@ -247,9 +252,9 @@
             </div>
         </section>
         <section class="review">
-            <h2 class="visually-hidden">Отзывы</h2>
-            <div class="review__wrapper slider">
-                <div class="review__list slider__list">
+          <h2 class="visually-hidden">Отзывы</h2>
+          <div class="review__wrapper slider">
+            <div class="review__list slider__list">
                     <blockquote class="review__item slider__item">
                         <span class="review__author">Николай Петров</span>
                         <span class="review__descr">25 лет, водитель трамвая</span>
@@ -269,14 +274,16 @@
                         </p>
                     </blockquote>
                     <button class="review__prev" type="button">
-            <svg class="review__button-image" width="22" height="41" viewBox="0 0 22 41">
-              <path d="M2.0413 20.5035L21.7483 1.4144C21.8281 1.3379 21.8914 1.24683 21.9346 1.14646C21.9778 1.04608 22 0.938398 22 0.829635C22 0.720871 21.9778 0.613187 21.9346 0.512814C21.8914 0.41244 21.8281 0.321369 21.7483 0.24487C21.6686 0.167255
-        21.5738 0.105671 21.4694 0.0636507C21.365 0.0216304 21.2532 0 21.1401 0C21.0271 0 20.9153 0.0216304 20.8109 0.0636507C20.7065 0.105671 20.6117 0.167255 20.532 0.24487L0.252535 19.9088C0.17249 19.9862 0.108978 20.0781 0.0656429 20.1793C0.0223074 20.2805
-        0 20.389 0 20.4985C0 20.6081 0.0223074 20.7166 0.0656429 20.8178C0.108978 20.919 0.17249 21.0109 0.252535 21.0883L20.532 40.7621C20.6967 40.9157 20.9167 41.001 21.1453 41C21.3139 40.9985 21.4783 40.9488 21.6181 40.8572C21.7578 40.7656 21.8666 40.6362
-        21.9309 40.485C21.9952 40.3339 22.0122 40.1677 21.9797 40.0072C21.9473 39.8467 21.8668 39.6991 21.7483 39.5827L2.0413 20.5035Z"/>
-              </svg>
-          </button>
+                      <p class="visually-hidden">Предыдущий комментарий</p>
+                      <svg class="review__button-image" width="22" height="41" viewBox="0 0 22 41">
+                        <path d="M2.0413 20.5035L21.7483 1.4144C21.8281 1.3379 21.8914 1.24683 21.9346 1.14646C21.9778 1.04608 22 0.938398 22 0.829635C22 0.720871 21.9778 0.613187 21.9346 0.512814C21.8914 0.41244 21.8281 0.321369 21.7483 0.24487C21.6686 0.167255
+                  21.5738 0.105671 21.4694 0.0636507C21.365 0.0216304 21.2532 0 21.1401 0C21.0271 0 20.9153 0.0216304 20.8109 0.0636507C20.7065 0.105671 20.6117 0.167255 20.532 0.24487L0.252535 19.9088C0.17249 19.9862 0.108978 20.0781 0.0656429 20.1793C0.0223074 20.2805
+                  0 20.389 0 20.4985C0 20.6081 0.0223074 20.7166 0.0656429 20.8178C0.108978 20.919 0.17249 21.0109 0.252535 21.0883L20.532 40.7621C20.6967 40.9157 20.9167 41.001 21.1453 41C21.3139 40.9985 21.4783 40.9488 21.6181 40.8572C21.7578 40.7656 21.8666 40.6362
+                  21.9309 40.485C21.9952 40.3339 22.0122 40.1677 21.9797 40.0072C21.9473 39.8467 21.8668 39.6991 21.7483 39.5827L2.0413 20.5035Z"/>
+                        </svg>
+                    </button>
                     <button class="review__next" type="button">
+                      <p class="visually-hidden">Следующий комментарий</p>
             <svg class="review__button-image" width="22" height="41" viewBox="0 0 22 41">
               <path d="M19.9587 20.4965L0.251671 39.5856C0.171938 39.6621 0.108643 39.7532 0.065443 39.8535C0.0222435 39.9539 0 40.0616 0 40.1704C0 40.2791 0.0222435 40.3868 0.065443 40.4872C0.108643 40.5876 0.171938 40.6786 0.251671 40.7551C0.33144
         40.8327 0.426224 40.8943 0.530588 40.9363C0.634953 40.9784 0.746847 41 0.859852 41C0.972857 41 1.08475 40.9784 1.18911 40.9363C1.29348 40.8943 1.38826 40.8327 1.46803 40.7551L21.7475 21.0912C21.8275 21.0138 21.891 20.9219 21.9344 20.8207C21.9777 20.7195
@@ -284,26 +291,26 @@
         0.133411 0.363811 0.069088 0.51498C0.00476646 0.666149 -0.0122204 0.83234 0.0202503 0.992809C0.052721 1.15328 0.133209 1.30093 0.251671 1.41732L19.9587 20.4965Z"/>
               </svg>
           </button>
-                </div>
-                <p class="review__toggles slider__toggles">
-                    <button class="slider__toggle slider__toggle--current" type="button">
-                      <span class="visually-hidden">1</span>
-                    </button>
-                    <button class="slider__toggle" type="button">
-                      <span class="visually-hidden">2</span>
-                    </button>
-                    <button class="slider__toggle" type="button">
-                      <span class="visually-hidden">3</span>
-                    </button>
-                </p>
             </div>
+            <p class="review__toggles slider__toggles">
+              <button class="slider__toggle slider__toggle--current" type="button">
+                <span class="visually-hidden">1</span>
+              </button>
+              <button class="slider__toggle" type="button">
+                <span class="visually-hidden">2</span>
+              </button>
+              <button class="slider__toggle" type="button">
+                <span class="visually-hidden">3</span>
+              </button>
+            </p>
+          </div>
         </section>
         <section class="tariff">
-            <div class="tariff__wrapper">
-                <h2 class="visually-hidden">
-                    Тарифный план
-                </h2>
-                <table class="tariff__table">
+          <div class="tariff__wrapper">
+            <h2 class="visually-hidden">
+              Тарифный план
+            </h2>
+            <table class="tariff__table">
                     <tr class="tariff__row">
                         <th class="tariff__cell"></th>
                         <th class="tariff__cell">
@@ -324,20 +331,20 @@
                         <td class="tariff__cell">
                           <span class="tariff__cell-text">Розовый фильтр</span>
                             <svg class="tariff__cell-icon tariff__cell-icon--yes" width="31" height="21">
-                <use xlink:href="./img/sprite.svg#yes"></use>
-              </svg>
+                            <use xlink:href="./img/sprite.svg#yes"></use>
+                          </svg>
                         </td>
                         <td class="tariff__cell">
                           <span class="tariff__cell-text">Розовый фильтр</span>
                             <svg class="tariff__cell-icon tariff__cell-icon--yes" width="31" height="21">
-                <use xlink:href="./img/sprite.svg#yes"></use>
-              </svg>
+                            <use xlink:href="./img/sprite.svg#yes"></use>
+                          </svg>
                         </td>
                         <td class="tariff__cell">
                           <span class="tariff__cell-text">Розовый фильтр</span>
                             <svg class="tariff__cell-icon tariff__cell-icon--yes" width="31" height="21">
-                <use xlink:href="./img/sprite.svg#yes"></use>
-              </svg>
+                            <use xlink:href="./img/sprite.svg#yes"></use>
+                          </svg>
                         </td>
                     </tr>
                     <tr class="tariff__row">
@@ -345,20 +352,20 @@
                         <td class="tariff__cell">
                           <span class="tariff__cell-text">Смайлики</span>
                             <svg class="tariff__cell-icon tariff__cell-icon--no" width="27" height="27">
-                <use xlink:href="./img/sprite.svg#no"></use>
-              </svg>
+                            <use xlink:href="./img/sprite.svg#no"></use>
+                          </svg>
                         </td>
                         <td class="tariff__cell">
                           <span class="tariff__cell-text">Смайлики</span>
                             <svg class="tariff__cell-icon tariff__cell-icon--yes" width="31" height="21">
-                <use xlink:href="./img/sprite.svg#yes"></use>
-              </svg>
+                            <use xlink:href="./img/sprite.svg#yes"></use>
+                          </svg>
                         </td>
                         <td class="tariff__cell">
                           <span class="tariff__cell-text">Смайлики</span>
                             <svg class="tariff__cell-icon tariff__cell-icon--yes" width="31" height="21">
-                <use xlink:href="./img/sprite.svg#yes"></use>
-              </svg>
+                              <use xlink:href="./img/sprite.svg#yes"></use>
+                            </svg>
                         </td>
                     </tr>
                     <tr class="tariff__row">
@@ -366,29 +373,31 @@
                         <td class="tariff__cell">
                           <span class="tariff__cell-text">Комментарии</span>
                             <svg class="tariff__cell-icon tariff__cell-icon--no" width="27" height="27">
-                <use xlink:href="./img/sprite.svg#no"></use>
-              </svg>
+                              <use xlink:href="./img/sprite.svg#no"></use>
+                            </svg>
                         </td>
                         <td class="tariff__cell">
                           <span class="tariff__cell-text">Комментарии</span>
                             <svg class="tariff__cell-icon tariff__cell-icon--no" width="27" height="27">
-                <use xlink:href="./img/sprite.svg#no"></use>
-              </svg>
+                              <use xlink:href="./img/sprite.svg#no"></use>
+                            </svg>
                         </td>
                         <td class="tariff__cell">
                           <span class="tariff__cell-text">Комментарии</span>
                             <svg class="tariff__cell-icon tariff__cell-icon--yes" width="31" height="21">
-                <use xlink:href="./img/sprite.svg#yes"></use>
-              </svg>
+                              <use xlink:href="./img/sprite.svg#yes"></use>
+                            </svg>
                         </td>
                     </tr>
-                </table>
-                <p class="tariff__toggles slider__toggles">
-                    <button class="slider__toggle" type="button"></button>
-                    <button class="slider__toggle slider__toggle--current" type="button"></button>
-                    <button class="slider__toggle" type="button"></button>
-                </p>
+            </table>
+            <div class="tariff__wrapper slider">
+              <p class="tariff__toggles slider__toggles">
+                <button class="slider__toggle" type="button"></button>
+                <button class="slider__toggle slider__toggle--current" type="button"></button>
+                <button class="slider__toggle" type="button"></button>
+              </p>
             </div>
+          </div>
         </section>
     </main>
     <footer class="page-footer">
@@ -398,7 +407,7 @@
                 <div class="contacts__text-wrapper contacts__text-wrapper--phone">
                   <span class="contacts__subtitle">Звоните:</span>
                   <p class="contacts__text">
-                      <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+                    <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
                   </p>
                 </div>
                 <div class="contacts__text-wrapper contacts__text-wrapper--mail">
@@ -415,7 +424,7 @@
             <div class="page-footer__map">
                 <iframe class="page-footer__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
                     allowfullscreen title="ул. Большая Конюшенная, 19/8">
-                 </iframe>
+                </iframe>
             </div>
             <div class="page-footer__social-wrapper">
                 <div class="page-footer__logo">

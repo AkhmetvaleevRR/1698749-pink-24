@@ -51,8 +51,13 @@ const optimizeImages = () => {
         .pipe(gulp.dest('build/img'))
 }
 
+const copymanifest = () => {
+  return gulp.src('manifest.webmanifest')
+      .pipe(gulp.dest('build/'))
+}
+
 const copyImages = () => {
-    return gulp.src('source/img/**/*.{png,jpg}')
+    return gulp.src('source/img/**/*.{png,jpg,svg}')
         .pipe(gulp.dest('build/img'))
 }
 
@@ -144,7 +149,8 @@ export const build = gulp.series(
         scripts,
         svg,
         sprite,
-        createWebp
+        createWebp,
+        copymanifest
     ),
 );
 
@@ -161,7 +167,8 @@ export default gulp.series(
         scripts,
         svg,
         sprite,
-        createWebp
+        createWebp,
+        copymanifest
     ),
     gulp.series(
         server,

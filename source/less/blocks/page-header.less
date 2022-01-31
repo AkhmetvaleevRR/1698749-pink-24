@@ -11,7 +11,7 @@
   flex-direction: column;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/bg/back-mobile.webp");
+    background-image: url("../img/bg/back-mobile-2x.png");
     background-color: @dark-blue;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -24,7 +24,7 @@
     background-color: @dark-blue;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/bg/back-tablet.webp");
+      background-image: url("../img/bg/back-tablet-2x.png");
     }
   }
 
@@ -34,7 +34,7 @@
     background-position-y: 0;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/bg/back-desktop.webp");
+      background-image: url("../img/bg/back-desktop-2x.png");
     }
   }
 
@@ -44,7 +44,7 @@
     height: 462px;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/bg/phone-hand.webp") bottom no-repeat, url("../img/bg/back-mobile.webp") no-repeat @dark-blue;
+      background: url("../img/bg/phone-hand-2x.png") bottom no-repeat, url("../img/bg/back-mobile-2x.png") no-repeat @dark-blue;
       background-size: 320px, 100%;
     }
 
@@ -54,8 +54,8 @@
       background-size: 660px, 100%;
 
       @media (min-resolution: 2dppx) {
-        background: url("../img/bg/phone-hand-tablet.webp") bottom no-repeat, url("../img/bg/back-tablet.webp") no-repeat @dark-blue;
-        background-size: 660px, 100%;
+        background: url("../img/bg/phone-hand-tablet-2x.png") bottom no-repeat, url("../img/bg/back-tablet-2x.png") no-repeat @dark-blue;
+        background-size: 890px, 100%;
       }
     }
 
@@ -67,7 +67,7 @@
       background-position-y: 100%, center;
 
       @media (min-resolution: 2dppx) {
-        background: url("../img/bg/phone-hand-tablet.webp") bottom no-repeat, url("../img/bg/back-desktop.webp") no-repeat @dark-blue;
+        background: url("../img/bg/phone-hand-tablet-2x.png") bottom no-repeat, url("../img/bg/back-desktop-2x.png") no-repeat @dark-blue;
         background-size: 780px, 100%;
       }
     }
@@ -84,7 +84,6 @@
   line-height: 32px;
   color: inherit;
 
-
   @media (min-width: @tablet-width) {
     font-size: 50px;
     line-height: 68px;
@@ -99,27 +98,6 @@
 
     & br {
       display: none;
-    }
-  }
-
-  &--index {
-    margin: 87px 20px 80px 20px;
-
-    @media (min-width: @tablet-width) {
-      position: absolute;
-      left: 8%;
-      top: 12.4%;
-      width: 200px;
-      font-size: 40px;
-      line-height: 120%;
-    }
-
-    @media (min-width: @desktop-width) {
-      left: 11%;
-      top: 13%;
-      width: 250px;
-      font-size: 50px;
-      line-height: 68px;
     }
   }
 }
