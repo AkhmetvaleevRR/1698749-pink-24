@@ -3,6 +3,7 @@
 }
 
 .review__item {
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,12 +46,22 @@
 }
 
 .review__next {
-  right: 200px;
+  right: 110px;
+  top: 40px;
 }
 
 
 .review__prev {
-  left: 200px;
+  left: 110px;
+  top: 40px;
+}
+
+.review__toggles {
+  margin: 0 0 50px;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .review__wrapper {
@@ -59,18 +70,21 @@
   font-family: inherit;
   background: @white;
   text-align: center;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  padding: 40px 0 0 0;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 89%, 0% 100%);
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/icons/quotes.svg");
     background-repeat: no-repeat;
-    background-position: top;
-    padding: 40px 0 0 0;
+    background-position-x: center;
+    background-position-y: 20px;
+    padding: 100px 0 0 0;
     margin: 50px 0 0 0;
   }
 }
 
 .review__descr {
+  display: none;
   font-family: inherit;
   font-style: normal;
   font-size: 18px;
@@ -78,6 +92,14 @@
 
   @media (min-width: @tablet-width) {
     order: 3;
+    display: block;
+    font-size: 14px;
+    margin: 0 0 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    margin: 2px 0 120px;
   }
 }
 
@@ -89,7 +111,14 @@
   line-height: 30px;
 
   @media (min-width: @tablet-width) {
+    font-size: 20px;
+    margin: 35px 0 0 0;
     order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    font-size: 24px;
   }
 }
 
@@ -109,13 +138,13 @@
     line-height: 30px;
     margin: 35px 0 0 0;
 
-    br {
+    & br {
       display: none;
     }
+  }
 
-    @media (min-width: @tablet-width) {
-      width: 40%;
-      order: 1;
-    }
+  @media (min-width: @desktop-width) {
+    width: 65%;
+    margin: 35px 0 35px 0;
   }
 }

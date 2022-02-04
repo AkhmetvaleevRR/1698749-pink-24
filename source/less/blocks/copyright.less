@@ -2,6 +2,14 @@
   font-family: inherit;
   display: flex;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 20px 0 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 10px 15px 0 0;
+  }
 }
 
 .copyright__text {
@@ -11,6 +19,10 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .copyright__icon {
