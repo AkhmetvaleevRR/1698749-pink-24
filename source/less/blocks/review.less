@@ -99,13 +99,23 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
-
-  br {
-    display: none;
-  }
+  width: 100%;
+  margin: 15px 0 20px 0;
 
   @media (min-width: @tablet-width) {
-    width: 40%;
+    width: 96%;
     order: 1;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 35px 0 0 0;
+
+    br {
+      display: none;
+    }
+
+    @media (min-width: @tablet-width) {
+      width: 40%;
+      order: 1;
+    }
   }
 }

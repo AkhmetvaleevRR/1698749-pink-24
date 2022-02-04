@@ -1,13 +1,13 @@
 .research {
-  padding: 54px 0 20px;
+  padding: 54px 0 45px;
   font-family: inherit;
   background: @white;
   display: none;
 
   @media (min-width: @tablet-width) {
+    position: relative;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   @media (min-width: @desktop-width) {
@@ -19,6 +19,10 @@
   margin: 0 0 0 72px;
   flex-direction: column;
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 0 330px;
+  }
 }
 
 .research__slogan {
@@ -28,6 +32,35 @@
   font-size: 30px;
   line-height: 36px;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    margin: 42px 0 10px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+    margin: 62px 0 30px 0;
+
+    & br {
+      display: none;
+    }
+  }
+}
+
+.research__image {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 55px;
+    left: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    align-self: center;
+    margin: 25px 0 0;
+    width: 300px;
+    height: 346px;
+  }
 }
 
 .research__intro {
@@ -37,6 +70,27 @@
   font-size: 14px;
   line-height: 24px;
   color: @dark;
+
+
+  @media (min-width: @tablet-width) {
+    margin: 5px 0 14px 0;
+    width: 92%;
+
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0 0 30px 0;
+    width: 522px;
+
+    & br {
+      display: none;
+    }
+  }
 }
 
 .research__link {

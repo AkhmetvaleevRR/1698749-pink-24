@@ -1,10 +1,33 @@
 .site-list {
   list-style: none;
   z-index: 2;
+
+  @media (min-width: @desktop-width) {
+    align-self: center;
+    margin: 0 0 0 10%;
+    padding: 21px 0 21px;
+    column-gap: 30px;
+    flex-wrap: wrap;
+  }
 }
 
-.site-item {
-  padding: 21px 0;
+.site-list__item {
+  width: 100%;
+
+  @media (min-width: @desktop-width) {
+    padding: 21px 0;
+    position: relative;
+    width: initial;
+
+    &--active::after {
+      content: "";
+      position: absolute;
+      left: 35px;
+      bottom: 19px;
+      border-bottom: 1px #ffffff solid;
+      width: 75%;
+    }
+  }
 }
 
 .site-list a {
@@ -33,6 +56,6 @@
   }
 
   &:active {
-    color: fade(@red, 30%);
+    color: fade(@white, 30%);
   }
 }

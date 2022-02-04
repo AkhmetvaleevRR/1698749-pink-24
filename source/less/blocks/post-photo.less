@@ -21,9 +21,17 @@
     align-items: center;
     justify-items: center;
 
-    & .post-photo__image {
-      grid-column: 1/2;
-      grid-row: 1/4;
+    & a {
+      margin: 0 0 0 -45px;
+      grid-column: 2/3;
+      grid-row: 2/4;
+      width: 300px;
+      height: 400px;
+    }
+
+    & .post-photo__list {
+      grid-column: 2/3;
+      grid-row: 1/2;
     }
 
     & .post-photo__button {
@@ -46,6 +54,10 @@
       grid-row: 2/4;
       height: 400px;
       width: 300px;
+    }
+
+    & a {
+      margin: 0;
     }
 
     & .post-photo__button:nth-child(3) {
@@ -147,6 +159,24 @@
   &:active {
     color: fade(@white, 30%);
     background-color: @dark;
+  }
+
+  &:focus-visible {
+    opacity: 1;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    bottom: -9%;
+    right: -1%;
+    padding: 15px 90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: unset;
+    margin: 20px 0 0 60%;
+    align-self: end;
+    padding: 15px 30%;
   }
 }
 
