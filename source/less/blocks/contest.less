@@ -124,6 +124,14 @@
 .contest__buttons-wrap {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    row-gap: 32px;
+  }
+
+  &:focus {
+    border: 2px solid @red;
+  }
 }
 
 .contest .contest__text-input_wrap,
