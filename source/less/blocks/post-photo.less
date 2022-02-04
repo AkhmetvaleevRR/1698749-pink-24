@@ -31,10 +31,10 @@
     align-items: center;
     justify-items: center;
 
-    & .post-photo__image {
+    & a {
       margin: 0 0 0 -45px;
-      grid-column: 1/2;
-      grid-row: 1/4;
+      grid-column: 2/3;
+      grid-row: 2/4;
       width: 300px;
       height: 400px;
     }
@@ -68,7 +68,7 @@
       width: 300px;
     }
 
-    & .post-photo__image {
+    & a {
       margin: 0;
     }
 
@@ -211,6 +211,10 @@
   &:active {
     color: fade(@white, 30%);
     background-color: @dark;
+  }
+
+  &:focus-visible {
+    opacity: 1;
   }
 
   @media (min-width: @tablet-width) {

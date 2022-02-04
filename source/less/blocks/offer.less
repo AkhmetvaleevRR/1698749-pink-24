@@ -10,10 +10,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
-
-  @media (min-width: @tablet-width) {
-    flex-direction: row;
-  }
+  position: relative;
 }
 
 .offer__image {
@@ -24,9 +21,10 @@
 
   @media (min-width: @tablet-width) {
     z-index: 2;
-    margin: 15px 0 0 3%;
-    align-self: flex-end;
-    width: 270px;
+    position: absolute;
+    bottom: 0;
+    left: 3%;
+    width: 268px;
     height: 480px;
   }
 
@@ -38,7 +36,7 @@
 }
 
 .offer__slogan {
-  margin: 46px 20px 25px 20px;
+  margin: 36px 20px 30px 20px;
   font-family: inherit;
   font-style: normal;
   font-weight: 300;
@@ -74,7 +72,7 @@
   margin: 0 0 70px 0;
 
   @media (min-width: @tablet-width) {
-    margin: 0 auto 86px;
+    margin: 0 auto 13.2%;
     width: 60%;
   }
 
@@ -90,7 +88,7 @@
 .offer__list {
   padding: 0;
   list-style: none;
-  margin: 43px auto 25px;
+  margin: 73px auto 25px;
   display: flex;
   flex-direction: column;
   row-gap: 15px;
@@ -99,7 +97,7 @@
     order: 2;
     align-self: flex-start;
     text-align: left;
-    margin: 85px auto 25px;
+    margin: 90px 0 20px 315px;
   }
 
   @media (min-width: @desktop-width) {
@@ -195,7 +193,7 @@
   &-wrapper {
     @media (min-width: @tablet-width) {
       margin: 0 0 0 12px;
-      width: 300px;
+      width: 93%;
     }
 
     @media (min-width: @desktop-width) {

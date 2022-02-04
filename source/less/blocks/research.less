@@ -1,13 +1,13 @@
 .research {
-  padding: 54px 0 20px;
+  padding: 54px 0 45px;
   font-family: inherit;
   background: @white;
   display: none;
 
   @media (min-width: @tablet-width) {
+    position: relative;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 
   @media (min-width: @desktop-width) {
@@ -25,7 +25,7 @@
   text-align: left;
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 0 0;
+    margin: 0 0 0 330px;
   }
 }
 
@@ -36,6 +36,10 @@
   font-size: 30px;
   line-height: 36px;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    margin: 42px 0 10px 0;
+  }
 
   @media (min-width: @desktop-width) {
     font-size: 30px;
@@ -50,7 +54,9 @@
 
 .research__image {
   @media (min-width: @tablet-width) {
-    margin: 0 40px 0 0;
+    position: absolute;
+    top: 55px;
+    left: 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -68,6 +74,16 @@
   font-size: 14px;
   line-height: 24px;
   color: @dark;
+
+
+  @media (min-width: @tablet-width) {
+    margin: 5px 0 14px 0;
+    width: 92%;
+
+    & br {
+      display: none;
+    }
+  }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
