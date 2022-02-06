@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./img/icons/16.svg" type="image/svg+xml">
     <link rel="icon" href="./img/icons/32.svg" type="image/svg+xml">
-    <link rel="icon" href="./img/icons/150.svg" type="image/svg+xml">
+    <link rel="icon" href="./img/icons/152.svg" type="image/svg+xml">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="preload" href="./fonts/opensans.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
@@ -91,10 +91,12 @@
             <span class="photo-gallery__span">ПАНОРАМА ДНЯ</span>
             <a href="../img/gallery/panorama-desktop-2x.png">
               <picture>
-                <source type="image/webp" media="(min-width: 660px)" srcset="../img/gallery/panorama-desktop.webp 1x, ./img/gallery/panorama-desktop-2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="../img/gallery/panorama-desktop.webp 1x, ./img/gallery/panorama-desktop-2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="../img/gallery/panorama-tablet.webp 1x, ../img/gallery/panorama-tablet-2x.webp 2x">
                 <source type="image/webp" srcset="../img/gallery/gallery-1.webp 1x, ./img/gallery/gallery-1-2x.webp 2x">
-                <source type="image/png" media="(min-width: 660px)" srcset="../img/gallery/panorama-desktop.png 1x, ../img/gallery/panorama-desktop-2x.png 2x">
-                <img class="photo-gallery__image" src="../img/gallery/gallery-1.png" srcset="../img/gallery/gallery-1-2x.png" alt="фотография дня" width="320" height ="137">
+                <source type="image/png" media="(min-width: 1200px)" srcset="../img/gallery/panorama-desktop.png 1x, ../img/gallery/panorama-desktop-2x.png 2x">
+                <source type="image/png" media="(min-width: 660px)" srcset="../img/gallery/panorama-tablet.png 1x, ../img/gallery/panorama-tablet-2x.png 2x">
+                <img class="photo-gallery__image" src="../img/gallery/gallery-1.png" srcset="../img/gallery/gallery-1-2x.png 2x" alt="фотография дня" width="320" height ="137">
               </picture>
             </a>
             <div class="photo-gallery__comment-wrap photo-gallery__comment-wrap--current">
@@ -112,10 +114,12 @@
             <li class="photo-gallery__item">
               <a href="../img/gallery/gallery-2-desktop-2x.png">
                 <picture>
-                  <source type="image/webp" media="(min-width: 660px)" srcset="../img/gallery/gallery-2-desktop.webp 1x, ./img/gallery/gallery-2-desktop.webp 2x">
-                  <source type="image/webp" srcset="../img/gallery/gallery-2.webp 1x, ./img/gallery/gallery-2.webp 2x">
-                  <source type="image/png" media="(min-width: 660px)" srcset="../img/gallery/gallery-2-desktop.png 1x, ../img/gallery/gallery-2-desktop-2x.png 2x">
-                  <img class="photo-gallery__image" src="../img/gallery/gallery-2.png" srcset="../img/gallery/gallery-2-2x.png" alt="фото машина" width="300" height ="400">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/gallery-2-desktop.webp 1x, img/gallery/gallery-2-desktop.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset=".img/gallery/gallery-2-tablet.webp 1x, img/gallery/gallery-2-tablet.webp 2x">
+                  <source type="image/webp" srcset="img/gallery/gallery-2.webp 1x, img/gallery/gallery-2-2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/gallery/gallery-2-desktop.png 1x, img/gallery/gallery-2-desktop-2x.png 2x">
+                  <source media="(min-width: 660px)" srcset="img/gallery/gallery-2-tablet.png 1x, img/gallery/gallery-2-tablet-2x.png 2x">
+                  <img class="photo-gallery__image" src="img/gallery/gallery-2.png"  srcset="img/gallery/gallery-2-2x.png 2x" alt="фото машина" width="300" height ="400">
                 </picture>
               </a>
               <div class="photo-gallery__comment-wrap">
@@ -133,10 +137,12 @@
             <li class="photo-gallery__item">
               <a href="../img/gallery/gallery-3-desktop-2x.png">
                 <picture>
-                  <source type="image/webp" media="(min-width: 660px)" srcset="../img/gallery/gallery-3-desktop.webp 1x, ./img/gallery/gallery-3-desktop.webp 2x">
-                  <source type="image/webp" srcset="../img/gallery/gallery-3.webp 1x, ./img/gallery/gallery-3.webp 2x">
-                  <source type="image/png" media="(min-width: 660px)" srcset="../img/gallery/gallery-3-desktop.png 1x, ../img/gallery/gallery-3-desktop-2x.png 2x">
-                  <img class="photo-gallery__image" src="../img/gallery/gallery-3.png" srcset="../img/gallery/gallery-3-2x.png"  alt="фото барабаны" width="300" height ="400">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="../img/gallery/gallery-3-desktop.webp 1x, ./img/gallery/gallery-3-desktop.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="../img/gallery/gallery-3-tablet.webp 1x, ./img/gallery/gallery-3-tablet.webp 2x">
+                  <source type="image/webp" srcset="../img/gallery/gallery-3.webp 1x, ./img/gallery/gallery-3-2x.webp 2x">
+                  <source type="image/png" media="(min-width: 1200px)" srcset="../img/gallery/gallery-3-desktop.png 1x, ../img/gallery/gallery-3-desktop-2x.png 2x">
+                  <source type="image/png" media="(min-width: 660px)" srcset="../img/gallery/gallery-3-tablet.png 1x, ../img/gallery/gallery-3-tablet-2x.png 2x">
+                  <img class="photo-gallery__image" src="../img/gallery/gallery-3.png" srcset="../img/gallery/gallery-3-2x.png 2x"  alt="фото барабаны" width="300" height ="400">
                 </picture>
               </a>
               <div class="photo-gallery__comment-wrap">
@@ -154,10 +160,12 @@
             <li class="photo-gallery__item">
               <a href="../img/gallery/gallery-4-desktop-2x.png">
                 <picture>
-                  <source type="image/webp" media="(min-width: 660px)" srcset="../img/gallery/gallery-4-desktop.webp 1x, ./img/gallery/gallery-4-desktop.webp 2x">
-                  <source type="image/webp" srcset="../img/gallery/gallery-4.webp 1x, ./img/gallery/gallery-4.webp 2x">
-                  <source type="image/png" media="(min-width: 660px)" srcset="../img/gallery/gallery-4-desktop.png 1x, ../img/gallery/gallery-4-desktop-2x.png 2x">
-                  <img class="photo-gallery__image" src="../img/gallery/gallery-4.png" srcset="../img/gallery/gallery-4-2x.png"  alt="фото крыша" width="300" height ="400">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="../img/gallery/gallery-4-desktop.webp 1x, ./img/gallery/gallery-4-desktop.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="../img/gallery/gallery-4-tablet.webp 1x, ./img/gallery/gallery-4-tablet.webp 2x">
+                  <source type="image/webp" srcset="../img/gallery/gallery-4.webp 1x, ./img/gallery/gallery-4-2x.webp 2x">
+                  <source type="image/png" media="(min-width: 1200px)" srcset="../img/gallery/gallery-4-desktop.png 1x, ../img/gallery/gallery-4-desktop-2x.png 2x">
+                  <source type="image/png" media="(min-width: 660px)" srcset="../img/gallery/gallery-4-tablet.png 1x, ../img/gallery/gallery-4-tablet-2x.png 2x">
+                  <img class="photo-gallery__image" src="../img/gallery/gallery-4.png" srcset="../img/gallery/gallery-4-2x.png 2x"  alt="фото крыша" width="300" height ="400">
                 </picture>
               </a>
               <div class="photo-gallery__comment-wrap">
@@ -175,10 +183,12 @@
             <li class="photo-gallery__item">
               <a href="../img/gallery/gallery-5-desktop-2x.png">
                 <picture>
-                  <source type="image/webp" media="(min-width: 660px)" srcset="../img/gallery/gallery-5-desktop.webp 1x, ./img/gallery/gallery-5-desktop.webp 2x">
-                  <source type="image/webp" srcset="../img/gallery/gallery-5.webp 1x, ./img/gallery/gallery-5.webp 2x">
-                  <source type="image/png" media="(min-width: 660px)" srcset="../img/gallery/gallery-5-desktop.png 1x, ../img/gallery/gallery-5-desktop-2x.png 2x">
-                  <img class="photo-gallery__image" src="../img/gallery/gallery-5.png" srcset="../img/gallery/gallery-5-2x.png"  alt="фото бахча" width="300" height ="400">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="../img/gallery/gallery-5-desktop.webp 1x, ./img/gallery/gallery-5-desktop.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="../img/gallery/gallery-5-tablet.webp 1x, ./img/gallery/gallery-5-tablet.webp 2x">
+                  <source type="image/webp" srcset="../img/gallery/gallery-5.webp 1x, ./img/gallery/gallery-5-2x.webp 2x">
+                  <source type="image/png" media="(min-width: 1200px)" srcset="../img/gallery/gallery-5-desktop.png 1x, ../img/gallery/gallery-5-desktop-2x.png 2x">
+                  <source type="image/png" media="(min-width: 660px)" srcset="../img/gallery/gallery-5-tablet.png 1x, ../img/gallery/gallery-5-tablet-2x.png 2x">
+                  <img class="photo-gallery__image" src="../img/gallery/gallery-5.png" srcset="../img/gallery/gallery-5-2x.png 2x"  alt="фото бахча" width="300" height ="400">
                 </picture>
               </a>
               <div class="photo-gallery__comment-wrap">
@@ -196,10 +206,12 @@
             <li class="photo-gallery__item">
               <a href="../img/gallery/gallery-6-desktop-2x.png">
                 <picture>
-                  <source type="image/webp" media="(min-width: 660px)" srcset="../img/gallery/gallery-6-desktop.webp 1x, ./img/gallery/gallery-6-desktop.webp 2x">
-                  <source type="image/webp" srcset="../img/gallery/gallery-6.webp 1x, ./img/gallery/gallery-6.webp 2x">
-                  <source type="image/png" media="(min-width: 660px)" srcset="../img/gallery/gallery-6-desktop.png 1x, ../img/gallery/gallery-6-desktop-2x.png 2x">
-                  <img class="photo-gallery__image" src="../img/gallery/gallery-6.png" srcset="../img/gallery/gallery-6-2x.png"  alt="фото ноги" width="300" height ="400">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="../img/gallery/gallery-6-desktop.webp 1x, ./img/gallery/gallery-6-desktop.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="../img/gallery/gallery-6-tablet.webp 1x, ./img/gallery/gallery-6-tablet.webp 2x">
+                  <source type="image/webp" srcset="../img/gallery/gallery-6.webp 1x, ./img/gallery/gallery-6-2x.webp 2x">
+                  <source type="image/png" media="(min-width: 1200px)" srcset="../img/gallery/gallery-6-desktop.png 1x, ../img/gallery/gallery-6-desktop-2x.png 2x">
+                  <source type="image/png" media="(min-width: 660px)" srcset="../img/gallery/gallery-6-tablet.png 1x, ../img/gallery/gallery-6-tablet-2x.png 2x">
+                  <img class="photo-gallery__image" src="img/gallery/gallery-6.png" srcset="img/gallery/gallery-6-2x.png 2x"  alt="фото ноги" width="300" height ="400">
                 </picture>
               </a>
               <div class="photo-gallery__comment-wrap">
@@ -217,10 +229,12 @@
             <li class="photo-gallery__item">
               <a href="../img/gallery/gallery-7-desktop-2x.png">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="../img/gallery/gallery-7-desktop.webp 1x, ./img/gallery/gallery-7-desktop.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="../img/gallery/gallery-7-desktop.webp 1x, ./img/gallery/gallery-7-desktop.webp 2x">
-                  <source type="image/webp" srcset="../img/gallery/gallery-7.webp 1x, ./img/gallery/gallery-7.webp 2x">
+                  <source type="image/webp" srcset="../img/gallery/gallery-7.webp 1x, ./img/gallery/gallery-7-2x.webp 2x">
+                  <source type="image/png" media="(min-width: 1200px)" srcset="../img/gallery/gallery-7-desktop.png 1x, ../img/gallery/gallery-7-desktop-2x.png 2x">
                   <source type="image/png" media="(min-width: 660px)" srcset="../img/gallery/gallery-7-desktop.png 1x, ../img/gallery/gallery-7-desktop-2x.png 2x">
-                  <img class="photo-gallery__image" src="../img/gallery/gallery-7.png" srcset="../img/gallery/gallery-7-2x.png"  alt="фото самолет" width="300" height ="400">
+                  <img class="photo-gallery__image" src="../img/gallery/gallery-7.png" srcset="../img/gallery/gallery-7-2x.png 2x"  alt="фото самолет" width="300" height ="400">
                 </picture>
               </a>
               <div class="photo-gallery__comment-wrap">
