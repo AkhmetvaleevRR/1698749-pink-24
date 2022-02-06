@@ -32,7 +32,7 @@
   text-transform: uppercase;
   border: 2px solid #e5e5e5;
   border-radius: 1px 0 0 0;
-  padding: 8px 16px;
+  padding: 10px 20px 16px;
 
   @media (min-width: @tablet-width) {
     padding: 0 16px;
@@ -69,11 +69,14 @@
 
 .tariff__cell-icon {
   position: absolute;
-  right: 0;
+  right: 20px;
+  top: 15px;
 
   @media (min-width: @tablet-width) {
     position: relative;
-    margin: 6px 45px 2px;
+    right: 0;
+    top: 0;
+    margin: 8px 44px 2px;
   }
 
   @media (min-width: @desktop-width) {
@@ -93,6 +96,7 @@
   line-height: 30px;
   color: @white;
   text-transform: uppercase;
+  width: 100%;
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
@@ -100,11 +104,13 @@
 }
 
 .tariff__table {
+  table-layout: fixed;
   border-spacing: 0;
   background: @white;
-  margin: 0 170px 0 0;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
+    width: initial;
     margin: 0 auto;
   }
 
@@ -121,7 +127,7 @@
   line-height: 30px;
   color: @white;
   margin: -5px 0 0;
-  width: 100%;
+  white-space: nowrap;
 
   @media (min-width: @tablet-width) {
     width: 90%;
@@ -135,10 +141,18 @@
   }
 }
 
+.tariff .tariff__cell--hit {
+  background-image: url("../img/icons/hit.svg");
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: @dark;
+}
+
 .tariff__row th {
   border: 2px solid #e5e5e5;
   border-radius: 1px 0 0 0;
-  padding: 12px 55px;
+  padding: 12px 95px 30px;
   background: @dark;
   text-align: center;
 

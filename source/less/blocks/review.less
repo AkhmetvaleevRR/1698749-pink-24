@@ -70,8 +70,12 @@
   font-family: inherit;
   background: @white;
   text-align: center;
-  padding: 40px 0 0 0;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 89%, 0% 100%);
+  padding: 36px 0 0 0;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 93%, 0% 100%);
+
+  @media (min-width: @tablet-width) {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 89%, 0% 100%);
+  }
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/icons/quotes.svg");
@@ -136,7 +140,7 @@
     order: 1;
     font-size: 18px;
     line-height: 30px;
-    margin: 35px 0 0 0;
+    margin: 15px 0 0 0;
 
     & br {
       display: none;
